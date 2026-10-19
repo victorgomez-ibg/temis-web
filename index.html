@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TEMIS Estudio Jurídico — Abogadas en Cadereyta de Montes</title>
+<meta name="description" content="Despacho de abogadas en Cadereyta de Montes, Querétaro. Derecho familiar, civil, administrativo, agrario y laboral. Asesoría sin costo para mujeres que viven violencia, adultos mayores y personas de escasos recursos.">
+<meta name="robots" content="noindex,nofollow"><!-- QUITAR al publicar en temisestudiojuridico.com -->
+<link rel="icon" href="img/sello.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap">
+<style>
+/* ============================================================
+   TEMIS Estudio Jurídico
+   Paleta del logo: oro viejo degradado sobre blanco, con rosa
+   empolvado como segundo color. El blanco manda, el oro marca
+   y el rosa da el aire. Nada de grises corporativos.
+   Tipografía: Cormorant para los títulos, porque es la romana
+   que ya está en el logo; Jost para el cuerpo, geométrica y
+   legible, que no pelea con la serif.
+   ============================================================ */
+:where(*){margin:0;padding:0}
+*{box-sizing:border-box}
+:root{
+  --blanco:#ffffff;
+  --crema:#fefcfa;
+  --rosa-1:#fdf4f2;
+  --rosa-2:#f8e5e1;
+  --rosa-3:#eec9c3;
+  --rosa-4:#c98f86;
+  --oro-1:#f0dcae;
+  --oro-2:#d4a84b;
+  --oro-3:#a9792c;
+  --oro-4:#7d5a1f;
+  --tinta:#2a2320;
+  --tinta-2:#5c5049;
+  --tinta-3:#8a7d75;
+  --linea:#f0e4e0;
+  --verde:#3d6b55;
+  --rojo:#a8453c;
+  --oro-grad:linear-gradient(135deg,#c79a3e 0%,#f0dcae 28%,#b8862f 58%,#e8cf92 80%,#a9792c 100%);
+  --r:18px;
+  --sombra-s:0 1px 2px rgba(42,35,32,.04),0 8px 24px -12px rgba(42,35,32,.14);
+  --sombra-m:0 2px 4px rgba(42,35,32,.04),0 24px 56px -24px rgba(169,121,44,.3);
+  --fd:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --fb:'Jost',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  color-scheme:light;
+}
+html{scroll-behavior:smooth}
+body{background:var(--blanco);color:var(--tinta);font-family:var(--fb);font-size:17px;font-weight:400;line-height:1.7;-webkit-text-size-adjust:100%}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--oro-3);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(22px,env(safe-area-inset-left,0px));padding-right:max(22px,env(safe-area-inset-right,0px))}
+
+h1,h2,h3{font-family:var(--fd);font-weight:500;line-height:1.08;letter-spacing:-.015em;text-wrap:balance}
+h1{font-size:clamp(2.6rem,8.4vw,5rem)}
+h2{font-size:clamp(2rem,5.4vw,3.2rem)}
+h3{font-size:1.3rem;font-weight:600}
+.eyebrow{font-family:var(--fb);font-size:.7rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--oro-3)}
+.oro-txt{background:var(--oro-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.filete{width:72px;height:2px;background:var(--oro-grad);margin:20px 0;border-radius:2px}
+.filete.c{margin-inline:auto}
+.centro{text-align:center}
+
+/* ---------- aviso de borrador ---------- */
+.draft{background:var(--tinta);color:var(--oro-1);font-size:.78rem;text-align:center;padding:9px 18px;line-height:1.5;letter-spacing:.02em}
+.draft b{color:#fff}
+
+/* ---------- barra ---------- */
+.bar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--linea)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:11px}
+.marca{display:flex;align-items:center;gap:12px;min-width:0;text-decoration:none}
+.marca img{width:46px;height:46px;object-fit:cover;object-position:center 22%;border-radius:50%;border:1px solid var(--oro-1);flex:0 0 auto;background:#fff}
+.marca .n{font-family:var(--fd);font-size:1.3rem;font-weight:600;letter-spacing:.14em;line-height:1}
+.marca .s{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--tinta-3);margin-top:3px}
+.bar nav{display:none;gap:30px;font-size:.88rem;font-weight:500;letter-spacing:.01em}
+.bar nav a{text-decoration:none;color:var(--tinta-2);position:relative;padding-block:4px}
+.bar nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--oro-grad);transition:right .28s cubic-bezier(.22,1,.36,1)}
+.bar nav a:hover::after{right:0}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.95rem;letter-spacing:.01em;text-decoration:none;border:1px solid transparent;min-height:48px;transition:transform .14s,box-shadow .24s,background .24s}
+.btn:active{transform:translateY(1px)}
+.btn-oro{background:var(--oro-grad);color:#fff;box-shadow:0 4px 18px -6px rgba(169,121,44,.6)}
+.btn-oro:hover{box-shadow:0 8px 26px -8px rgba(169,121,44,.75)}
+.btn-linea{border-color:var(--rosa-3);color:var(--oro-4);background:rgba(255,255,255,.7)}
+.btn-linea:hover{background:var(--rosa-1);border-color:var(--oro-2)}
+.bar .btn{padding:10px 20px;min-height:42px;font-size:.86rem}
+
+/* ---------- apertura ---------- */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 620px at 88% -8%,var(--rosa-2) 0%,transparent 62%),
+  radial-gradient(760px 520px at -6% 102%,var(--rosa-1) 0%,transparent 60%),
+  var(--blanco)}
+.hero .wrap{padding-block:60px 56px;position:relative;display:grid;grid-template-columns:1fr;gap:42px;align-items:center}
+.hero-sello{width:98px;margin-bottom:22px}
+.hero h1 em{font-style:italic;font-weight:400}
+.hero .lede{margin-top:22px;font-size:1.16rem;color:var(--tinta-2);max-width:42ch;font-weight:300}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.hero .micro{margin-top:26px;font-size:.86rem;color:var(--tinta-3);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+.hero .micro span{display:flex;align-items:center;gap:7px}
+.hero .micro span::before{content:"";width:5px;height:5px;background:var(--oro-2);transform:rotate(45deg)}
+
+/* ---------- marcos de foto ---------- */
+.foto{
+  position:relative;border-radius:var(--r);overflow:hidden;background:
+    repeating-linear-gradient(135deg,var(--rosa-1),var(--rosa-1) 14px,var(--rosa-2) 14px,var(--rosa-2) 28px);
+  border:1px solid var(--rosa-3);display:grid;place-items:center;text-align:center;padding:26px;
+}
+.foto::before{content:"";position:absolute;inset:9px;border:1px dashed var(--oro-2);border-radius:calc(var(--r) - 7px);opacity:.55;pointer-events:none}
+.foto .ic{font-size:1.6rem;color:var(--oro-3);margin-bottom:10px}
+.foto .t{font-family:var(--fb);font-size:.66rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--oro-4)}
+.foto .d{font-size:.88rem;color:var(--tinta-2);margin-top:9px;max-width:30ch;line-height:1.5}
+.foto .m{font-size:.72rem;color:var(--tinta-3);margin-top:10px;letter-spacing:.04em}
+.foto.r43{aspect-ratio:4/3}
+.foto.r32{aspect-ratio:3/2}
+.foto.r45{aspect-ratio:4/5}
+.foto.r11{aspect-ratio:1/1}
+.foto.r169{aspect-ratio:16/9}
+
+/* ---------- franja ---------- */
+.franja{background:var(--tinta);color:#f4ece4;position:relative;overflow:hidden}
+.franja::before{content:"";position:absolute;inset:0;background:var(--oro-grad);opacity:.14}
+.franja .wrap{padding-block:20px;position:relative;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center;align-items:center}
+.franja span{font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;font-weight:500;display:flex;align-items:center;gap:10px}
+.franja span::before{content:"";width:5px;height:5px;background:var(--oro-1);transform:rotate(45deg)}
+
+/* ---------- secciones ---------- */
+section .wrap{padding-block:70px}
+.rosa{background:linear-gradient(180deg,var(--blanco) 0%,var(--rosa-1) 22%,var(--rosa-1) 78%,var(--blanco) 100%)}
+.dos{display:grid;grid-template-columns:1fr;gap:38px;align-items:center}
+.texto p{color:var(--tinta-2);margin-top:16px;font-weight:300}
+.texto p:first-of-type{margin-top:0}
+.texto strong{font-weight:600;color:var(--tinta)}
+
+/* socias */
+.socias{display:grid;grid-template-columns:1fr;gap:26px;margin-top:40px}
+.socia{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;box-shadow:var(--sombra-s);transition:box-shadow .3s,transform .3s}
+.socia:hover{box-shadow:var(--sombra-m);transform:translateY(-3px)}
+.socia .cuerpo{padding:24px}
+.socia h3{font-size:1.5rem;font-weight:600}
+.socia .rol{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--oro-3);margin-top:7px}
+.socia ul{list-style:none;margin-top:18px;display:grid;gap:8px}
+.socia li{font-size:.95rem;color:var(--tinta-2);padding-left:18px;position:relative;font-weight:300}
+.socia li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:1.5px;background:var(--oro-2)}
+
+/* servicios */
+.servicios{display:grid;grid-template-columns:1fr;gap:20px;margin-top:40px}
+.serv{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);padding:28px;position:relative;overflow:hidden}
+.serv::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--oro-grad)}
+.serv h3{margin-bottom:14px}
+.serv ul{list-style:none;display:grid;gap:8px;font-size:.94rem;color:var(--tinta-2);font-weight:300}
+.serv li{padding-left:16px;position:relative}
+.serv li::before{content:"·";position:absolute;left:3px;color:var(--oro-2);font-weight:700}
+
+/* bloque de apoyo */
+.apoyo{background:var(--tinta);color:#f6efe9;position:relative;overflow:hidden}
+.apoyo::after{content:"";position:absolute;right:-14%;top:-22%;width:62%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,143,134,.3) 0%,transparent 66%)}
+.apoyo .wrap{padding-block:72px;position:relative}
+.apoyo h2{color:#fff;max-width:20ch}
+.apoyo .sub{color:var(--rosa-3);margin-top:18px;max-width:52ch;font-weight:300;font-size:1.05rem}
+.apoyo .lista{display:grid;grid-template-columns:1fr;gap:16px;margin-top:38px}
+.apoyo .item{border:1px solid rgba(240,220,174,.26);border-radius:14px;padding:22px;background:rgba(255,255,255,.035)}
+.apoyo .item b{display:block;font-family:var(--fd);font-size:1.3rem;font-weight:600;color:var(--oro-1);margin-bottom:6px}
+.apoyo .item span{font-size:.93rem;color:#d9cec6;font-weight:300}
+.apoyo .cierre{margin-top:34px;font-size:1.02rem;color:#eadfd8;font-weight:300}
+
+/* razones */
+.razones{display:grid;grid-template-columns:1fr;gap:28px;margin-top:40px}
+.razon{position:relative;padding-left:24px}
+.razon::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;background:var(--oro-grad);border-radius:2px}
+.razon h3{font-size:1.18rem;margin-bottom:8px}
+.razon p{font-size:.95rem;color:var(--tinta-2);font-weight:300}
+
+/* citas */
+.cita{background:var(--rosa-1);border:1px solid var(--rosa-2);border-radius:var(--r);padding:30px;margin-top:38px}
+.cita p{font-family:var(--fd);font-size:clamp(1.3rem,3.2vw,1.8rem);line-height:1.35;color:var(--tinta);font-style:italic}
+.cita .q{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-3);font-weight:600;margin-top:16px;font-family:var(--fb);font-style:normal}
+
+/* preguntas */
+.faq{margin-top:38px;border:1px solid var(--linea);border-radius:var(--r);overflow:hidden}
+.faq details{border-bottom:1px solid var(--linea);background:var(--blanco)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;list-style:none;padding:22px 24px;font-weight:500;font-size:1.04rem;display:flex;justify-content:space-between;gap:16px;align-items:center;transition:background .2s}
+.faq summary:hover{background:var(--rosa-1)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:0 0 auto;width:11px;height:11px;border-right:1.6px solid var(--oro-3);border-bottom:1.6px solid var(--oro-3);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(225deg) translateY(-3px)}
+.faq details[open] summary{background:var(--rosa-1)}
+.faq .r{padding:0 24px 24px;color:var(--tinta-2);font-size:.98rem;font-weight:300;max-width:68ch}
+
+/* zonas */
+.zonas{display:flex;flex-wrap:wrap;gap:11px;margin-top:30px}
+.zona{border:1px solid var(--linea);background:var(--blanco);border-radius:999px;padding:11px 22px;font-size:.92rem;font-weight:500;color:var(--tinta-2)}
+.zona.on{border-color:var(--oro-2);color:var(--oro-4);background:linear-gradient(135deg,#fff,var(--rosa-1))}
+
+/* contacto */
+.ficha{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);padding:30px;box-shadow:var(--sombra-s)}
+.ficha dl{display:grid;gap:18px;margin-top:22px}
+.ficha dt{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-3);font-weight:700}
+.ficha dd{font-size:1.04rem;margin-top:4px;font-weight:300}
+.ficha dd b{font-weight:600}
+.ficha dd a{text-decoration:none;font-weight:600;color:var(--oro-4)}
+form{display:grid;gap:15px;margin-top:24px}
+label{display:grid;gap:7px;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--tinta-3)}
+input,select,textarea{font-family:var(--fb);font-size:16px;font-weight:400;color:var(--tinta);background:var(--crema);border:1px solid var(--linea);border-radius:12px;padding:13px 15px;width:100%;min-height:48px;transition:border-color .2s,box-shadow .2s}
+textarea{min-height:98px;resize:vertical;line-height:1.6}
+input:focus,select:focus,textarea:focus{border-color:var(--oro-2);outline:none;box-shadow:0 0 0 3px rgba(212,168,75,.17)}
+.fina{font-size:.8rem;color:var(--tinta-3);line-height:1.55;font-weight:300;text-transform:none;letter-spacing:0}
+.ok{border-left:3px solid var(--verde);background:var(--rosa-1);padding:14px 16px;font-size:.92rem}
+
+/* pendientes */
+.pendiente{background:linear-gradient(135deg,#fffaf0,#fdf3e3);border:1px dashed var(--oro-2);border-radius:14px;padding:16px 18px;font-size:.87rem;color:#6d5520;margin-top:22px;font-weight:400}
+.pendiente b{color:#8a6a1f}
+
+footer{background:var(--tinta);color:#cbbfb7}
+footer .wrap{padding-block:54px 40px;display:grid;gap:18px;font-size:.88rem;font-weight:300}
+footer .top{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
+footer img{width:76px;border-radius:50%;border:1px solid rgba(240,220,174,.4)}
+footer strong{color:#fff;font-weight:600}
+footer a{color:var(--oro-1)}
+.legal{font-size:.76rem;color:#9a8e86;line-height:1.65;border-top:1px solid #3c332e;padding-top:20px}
+
+@media (min-width:900px){
+  .bar nav{display:flex}
+  .hero .wrap{grid-template-columns:1.04fr .96fr;padding-block:88px 84px;gap:56px}
+  section .wrap{padding-block:100px}
+  .dos{grid-template-columns:1fr 1fr;gap:60px}
+  .socias{grid-template-columns:1fr 1fr;gap:30px}
+  .servicios{grid-template-columns:repeat(3,1fr)}
+  .razones{grid-template-columns:1fr 1fr;gap:34px 48px}
+  .apoyo .lista{grid-template-columns:repeat(3,1fr)}
+  footer .top{grid-template-columns:auto 1fr;gap:34px}
+  .cita{padding:42px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="draft"><b>BORRADOR</b> — los recuadros rosas marcan dónde van las fotos de la sesión y qué debe salir en cada una. Lo amarillo falta por confirmar.</div>
+
+<div class="bar"><div class="wrap">
+  <a class="marca" href="#inicio">
+    <img src="img/sello.jpg" alt="TEMIS Estudio Jurídico">
+    <span>
+      <span class="n">TEMIS</span>
+      <span class="s">Estudio Jurídico</span>
+    </span>
+  </a>
+  <nav>
+    <a href="#nosotras">Nosotras</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#apoyo">Asesoría sin costo</a>
+    <a href="#preguntas">Preguntas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="btn btn-oro" href="#contacto">Consulta tu caso</a>
+</div></div>
+
+<header class="hero" id="inicio"><div class="wrap">
+  <div>
+    <img class="hero-sello" src="img/sello.jpg" alt="">
+    <p class="eyebrow">Cadereyta de Montes, Querétaro</p>
+    <h1>Mujeres que buscan la <em class="oro-txt">justicia social</em></h1>
+    <p class="lede">Un despacho de abogadas de Cadereyta. Llevamos asuntos familiares, civiles, administrativos, agrarios y laborales. Lo que empezamos, lo terminamos.</p>
+    <div class="cta">
+      <a class="btn btn-oro" href="#contacto">Cuéntanos tu caso</a>
+      <a class="btn btn-linea" href="#apoyo">Asesoría sin costo</a>
+    </div>
+    <p class="micro">
+      <span>Cinco abogadas titulares</span>
+      <span>Cuatro pasantes</span>
+      <span>Desde 2017</span>
+    </p>
+  </div>
+
+  <figure class="foto r43">
+    <div>
+      <div class="ic">◉</div>
+      <div class="t">Foto principal</div>
+      <div class="d">Las abogadas del despacho juntas, de pie, mirando a cámara. En la oficina o en la fachada, con luz natural. Que se vean seguras y cercanas, no posadas de estudio.</div>
+      <div class="m">Horizontal 4:3 · mínimo 1600 px de ancho</div>
+    </div>
+  </figure>
+</div></header>
+
+<div class="franja"><div class="wrap">
+  <span>Familiar</span><span>Civil</span><span>Administrativo</span><span>Agrario</span><span>Laboral</span><span>Contratos</span><span>Gestión notarial</span>
+</div></div>
+
+<section id="nosotras"><div class="wrap">
+  <div class="dos">
+    <figure class="foto r45">
+      <div>
+        <div class="ic">◉</div>
+        <div class="t">El despacho por dentro</div>
+        <div class="d">Una abogada atendiendo a una clienta en la mesa de juntas, vista desde un lado. Documentos sobre la mesa. Sin mirar a cámara: la escena real de una consulta.</div>
+        <div class="m">Vertical 4:5 · mínimo 1200 px de ancho</div>
+      </div>
+    </figure>
+    <div>
+      <p class="eyebrow">Nosotras</p>
+      <div class="filete"></div>
+      <h2>Dos abogadas que abrieron su propio despacho</h2>
+      <div class="texto" style="margin-top:24px">
+        <p>TEMIS nació en <strong>2017</strong>, cuando dos abogadas de Cadereyta decidieron ejercer por su cuenta en lugar de esperar a que alguien les diera la oportunidad. En 2019 le dimos formalidad e invitamos a más personas.</p>
+        <p>El nombre viene de <strong>Temis, la diosa de la justicia</strong>. Empezamos puras mujeres y quisimos algo que nos identificara.</p>
+        <p>Hoy somos <strong>cinco abogadas titulares y cuatro pasantes</strong>. Cada una tiene su área, así que el asunto lo lleva quien sabe de esa materia.</p>
+        <p>Somos de aquí: vivimos en Cadereyta y crecimos en Cadereyta. Nuestros clientes saben dónde encontrarnos.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="socias">
+    <article class="socia">
+      <figure class="foto r45" style="border:0;border-radius:0;border-bottom:1px solid var(--linea)">
+        <div>
+          <div class="ic">◉</div>
+          <div class="t">Retrato · Jazmín</div>
+          <div class="d">Media figura, fondo claro o la pared del despacho desfocada. Vestimenta formal. Expresión amable, de frente.</div>
+          <div class="m">Vertical 4:5 · mismo encuadre que el de Marisol</div>
+        </div>
+      </figure>
+      <div class="cuerpo">
+        <h3>Lic. Jazmín Balbuena Arteaga</h3>
+        <p class="rol">Socia fundadora · Derecho familiar</p>
+        <ul>
+          <li>Divorcios</li>
+          <li>Custodias y convivencias</li>
+          <li>Pensiones alimenticias</li>
+          <li>Juicios sucesorios</li>
+          <li>Gestión notarial</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="socia">
+      <figure class="foto r45" style="border:0;border-radius:0;border-bottom:1px solid var(--linea)">
+        <div>
+          <div class="ic">◉</div>
+          <div class="t">Retrato · Marisol</div>
+          <div class="d">Mismo encuadre, misma luz y mismo fondo que el de Jazmín, para que la pareja de retratos se vea de la misma sesión.</div>
+          <div class="m">Vertical 4:5 · mismo encuadre que el de Jazmín</div>
+        </div>
+      </figure>
+      <div class="cuerpo">
+        <h3>Mtra. Marisol Alvarado Ángeles</h3>
+        <p class="rol">Socia fundadora · Civil y agrario</p>
+        <ul>
+          <li>Juicios civiles</li>
+          <li>Asuntos administrativos</li>
+          <li>Derecho agrario</li>
+          <li>Materia laboral</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  <div class="pendiente">
+    <b>Falta por confirmar:</b> los nombres de las otras tres abogadas titulares y si quieren publicar sus cédulas profesionales. Si las cinco van a aparecer, el bloque crece a cinco retratos con el mismo encuadre.
+  </div>
+</div></section>
+
+<section class="rosa" id="servicios"><div class="wrap">
+  <div class="centro">
+    <p class="eyebrow">Servicios</p>
+    <div class="filete c"></div>
+    <h2>En qué podemos ayudarte</h2>
+  </div>
+  <div class="servicios">
+    <div class="serv">
+      <h3>Familia</h3>
+      <ul>
+        <li>Pensiones alimenticias</li>
+        <li>Divorcios</li>
+        <li>Custodias y convivencias</li>
+        <li>Pérdida de patria potestad</li>
+        <li>Juicios sucesorios</li>
+        <li>Medidas cautelares y urgentes</li>
+        <li>Convenios de pensión</li>
+        <li>Rectificación de actas</li>
+        <li>Adopciones</li>
+        <li>Reconocimiento de paternidad</li>
+        <li>Repatriación</li>
+      </ul>
+    </div>
+    <div class="serv">
+      <h3>Civil, agrario y laboral</h3>
+      <ul>
+        <li>Juicios civiles</li>
+        <li>Asuntos administrativos</li>
+        <li>Derecho agrario</li>
+        <li>Conflictos laborales</li>
+        <li>Jurisdicciones voluntarias</li>
+      </ul>
+    </div>
+    <div class="serv">
+      <h3>Contratos</h3>
+      <ul>
+        <li>Compraventa</li>
+        <li>Arrendamiento</li>
+        <li>Comodato</li>
+        <li>Prestación de servicios</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section class="apoyo" id="apoyo"><div class="wrap">
+  <p class="eyebrow" style="color:var(--oro-1)">Asesoría sin costo</p>
+  <div class="filete"></div>
+  <h2>Hay consultas por las que no cobramos</h2>
+  <p class="sub">No es una promoción ni tiene letra chica. Son casos en los que cobrar honorarios sería parte del problema.</p>
+  <div class="lista">
+    <div class="item"><b>Mujeres que viven violencia</b><span>La asesoría no genera honorarios.</span></div>
+    <div class="item"><b>Adultos mayores</b><span>Tampoco.</span></div>
+    <div class="item"><b>Escasos recursos</b><span>Se valora cada caso y se atiende.</span></div>
+  </div>
+  <p class="cierre">Si estás en alguna de estas situaciones, escríbenos. Preguntar no cuesta nada y no te compromete a nada.</p>
+  <a class="btn btn-oro" style="margin-top:26px" href="#contacto">Escribir ahora</a>
+</div></section>
+
+<section><div class="wrap">
+  <p class="eyebrow">Por qué nos buscan</p>
+  <div class="filete"></div>
+  <h2>Lo que dicen quienes ya pasaron por aquí</h2>
+  <div class="razones">
+    <div class="razon">
+      <h3>Nos recomiendan</h3>
+      <p>La mayoría de quienes llegan vienen por recomendación de alguien a quien ya atendimos. Es como hemos crecido.</p>
+    </div>
+    <div class="razon">
+      <h3>Somos de Cadereyta</h3>
+      <p>Vivimos aquí y crecimos aquí. El despacho está en el centro y saben dónde encontrarnos.</p>
+    </div>
+    <div class="razon">
+      <h3>Un despacho de mujeres</h3>
+      <p>Muchas clientas nos buscan porque les resulta más fácil contar su situación a otra mujer. Y también nos buscan hombres, por lo mismo: se sienten escuchados.</p>
+    </div>
+    <div class="razon">
+      <h3>No dejamos casos a medias</h3>
+      <p>Lo que empezamos lo terminamos. Y el costo que acordamos al principio es el que se respeta hasta el final.</p>
+    </div>
+  </div>
+
+  <div class="cita">
+    <p>“Jamás prometemos que vas a ganar. Siempre hay que ser realistas: ponemos nuestro conocimiento, pero nunca prometemos lo que no sabemos que vaya a pasar.”</p>
+    <p class="q">Las socias de TEMIS</p>
+  </div>
+</div></section>
+
+<section class="rosa" id="preguntas"><div class="wrap">
+  <div class="centro">
+    <p class="eyebrow">Preguntas</p>
+    <div class="filete c"></div>
+    <h2>Lo que nos preguntan siempre</h2>
+  </div>
+  <div class="faq">
+    <details open>
+      <summary>¿Voy a ganar?</summary>
+      <div class="r">No se lo prometemos a nadie, y desconfíe de quien se lo prometa. La decisión está en manos de un juez. Lo que sí le decimos desde la primera plática es qué tan sólido está su caso, qué puede probarse y qué no.</div>
+    </details>
+    <details>
+      <summary>¿Cuánto cuesta?</summary>
+      <div class="r">Depende de la complejidad del asunto y de dónde se lleve. Tenemos un rango y se lo decimos en la primera conversación, antes de que usted se comprometa a nada. El costo acordado no se aumenta después.</div>
+    </details>
+    <details>
+      <summary>¿Cuánto va a tardar?</summary>
+      <div class="r">Depende del juzgado y del tipo de asunto. Preferimos darle un plazo realista a uno optimista: lo segundo es lo que hace que la gente pierda la confianza a mitad del juicio.</div>
+    </details>
+    <details>
+      <summary>¿Puedo pagar en partes?</summary>
+      <div class="r">Sí. Manejamos un anticipo y luego pagos conforme avanza el asunto. Las condiciones se acuerdan desde el inicio.</div>
+    </details>
+    <details>
+      <summary>Me voy a divorciar, ¿qué pasa con mis bienes y con mis hijos?</summary>
+      <div class="r">Son las dos preguntas que más nos hacen, y la respuesta depende del régimen bajo el que se casó y de la situación de los menores. Es justo lo que revisamos en la primera consulta.</div>
+    </details>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="dos">
+    <div>
+      <p class="eyebrow">Dónde atendemos</p>
+      <div class="filete"></div>
+      <h2>Cadereyta y la región</h2>
+      <div class="zonas">
+        <span class="zona on">Cadereyta de Montes</span>
+        <span class="zona">Ezequiel Montes</span>
+        <span class="zona">San Juan del Río</span>
+        <span class="zona">San Joaquín</span>
+        <span class="zona">Querétaro</span>
+      </div>
+      <p style="margin-top:22px;color:var(--tinta-2);font-weight:300">El despacho está en el centro de Cadereyta y también llevamos juicios en la capital del estado.</p>
+    </div>
+    <figure class="foto r32">
+      <div>
+        <div class="ic">◉</div>
+        <div class="t">Fachada</div>
+        <div class="d">La entrada del despacho en Benito Juárez No. 8, con el logo visible. De día, de frente. Es la foto que le dice al cliente que el despacho existe y dónde está.</div>
+        <div class="m">Horizontal 3:2 · mínimo 1400 px de ancho</div>
+      </div>
+    </figure>
+  </div>
+</div></section>
+
+<section class="rosa" id="contacto"><div class="wrap">
+  <div class="dos" style="align-items:start">
+    <div>
+      <p class="eyebrow">Contacto</p>
+      <div class="filete"></div>
+      <h2>Cuéntanos tu caso</h2>
+      <p style="color:var(--tinta-2);margin-top:18px;max-width:42ch;font-weight:300">Escríbenos por WhatsApp con lo básico de tu situación. Te decimos si podemos ayudarte y qué sigue.</p>
+
+      <div class="ficha" style="margin-top:28px">
+        <dl>
+          <dt>Dirección</dt>
+          <dd><b>Benito Juárez No. 8</b>, Col. Centro<br>Cadereyta de Montes, Qro., C.P. 76500</dd>
+          <dt>Teléfono y WhatsApp</dt>
+          <dd><a href="#contacto">441 130 4944</a></dd>
+          <dt>Horario</dt>
+          <dd>Por confirmar</dd>
+          <dt>Correo</dt>
+          <dd>Por confirmar</dd>
+        </dl>
+      </div>
+
+      <div class="pendiente">
+        <b>Falta por confirmar:</b> el teléfono publicado es el mismo de REGUTT S.C.; hay que decidir si TEMIS usa línea propia. También el horario real —el Facebook dice «siempre abierto»— y el correo con el dominio nuevo.
+      </div>
+    </div>
+
+    <div class="ficha">
+      <h3 style="font-size:1.4rem">Escríbenos</h3>
+      <p class="fina" style="margin-top:8px">Lo que nos cuentes es confidencial.</p>
+      <form id="f" novalidate>
+        <label>Tu nombre
+          <input id="nombre" type="text" autocomplete="name" placeholder="Como te llamas">
+        </label>
+        <label>Tu WhatsApp
+          <input id="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="441 000 0000">
+        </label>
+        <label>¿Sobre qué necesitas ayuda?
+          <select id="asunto">
+            <option>Divorcio</option>
+            <option>Pensión alimenticia</option>
+            <option>Custodia de mis hijos</option>
+            <option>Juicio sucesorio o herencia</option>
+            <option>Un asunto civil</option>
+            <option>Un asunto agrario</option>
+            <option>Un problema laboral</option>
+            <option>Un contrato</option>
+            <option>Todavía no sé, necesito orientación</option>
+          </select>
+        </label>
+        <label>Cuéntanos lo que quieras <span class="fina" style="display:inline">(opcional)</span>
+          <textarea id="detalle" placeholder="Escribe solo lo que te sientas cómoda compartiendo por aquí."></textarea>
+        </label>
+        <p id="error" class="fina" style="color:var(--rojo);font-weight:600" hidden>Escribe tu nombre y tu WhatsApp para continuar.</p>
+        <a class="btn btn-oro" id="enviar" href="#" rel="noopener" style="width:100%">Enviar por WhatsApp</a>
+        <p id="ok" class="ok" hidden>Se abrió WhatsApp con tu mensaje escrito. Solo falta que lo envíes.</p>
+        <p class="fina">Tus datos se usan únicamente para responderte. No se guardan en esta página ni se envían a ningún otro servicio.</p>
+      </form>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="top">
+    <img src="img/sello.jpg" alt="">
+    <div>
+      <p><strong>TEMIS Estudio Jurídico</strong> · Benito Juárez No. 8, Col. Centro, Cadereyta de Montes, Qro.</p>
+      <p style="margin-top:8px">Familiar · Civil · Administrativo · Agrario · Laboral · Contratos</p>
+      <p style="margin-top:8px">Cadereyta de Montes · Ezequiel Montes · San Juan del Río · San Joaquín · Querétaro</p>
+    </div>
+  </div>
+  <p class="legal">
+    <b style="color:var(--oro-1)">PENDIENTE ANTES DE PUBLICAR:</b> razón social del responsable, aviso de privacidad con domicilio y correo para el ejercicio de derechos ARCO, y nombre de la persona responsable de datos personales dentro del despacho. Sin esos datos esta página no debe recibir información de clientes.
+    <br><br>
+    La información de este sitio es orientativa y de carácter general. No constituye asesoría jurídica sobre un caso particular ni garantiza resultado alguno: cada asunto depende de sus propios hechos y pruebas.
+  </p>
+</div></footer>
+
+<script>
+(function(){
+  "use strict";
+  // Número que recibe los mensajes. PENDIENTE: confirmar si TEMIS usa línea propia.
+  var WA = "524411304944";
+
+  var f = document.getElementById('f');
+  var cta = document.getElementById('enviar');
+  var err = document.getElementById('error');
+  var ok  = document.getElementById('ok');
+  function val(id){ var e = document.getElementById(id); return e ? String(e.value||'').trim() : ''; }
+
+  function armar(){
+    var t = "Hola TEMIS, quiero una consulta.\n\n"
+      + "Nombre: " + (val('nombre') || '—') + "\n"
+      + "WhatsApp: " + (val('tel') || '—') + "\n"
+      + "Asunto: " + val('asunto');
+    var d = val('detalle');
+    if (d) t += "\n\nMi situación: " + d;
+    cta.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+  }
+  f.addEventListener('input', armar);
+  f.addEventListener('change', armar);
+  armar();
+
+  cta.addEventListener('click', function(e){
+    if (!val('nombre') || !val('tel')) {
+      e.preventDefault();
+      err.hidden = false;
+      document.getElementById(val('nombre') ? 'tel' : 'nombre').focus();
+      return;
+    }
+    err.hidden = true;
+    ok.hidden = false;
+  });
+})();
+</script>
+</body>
+</html>

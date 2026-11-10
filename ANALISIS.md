@@ -11,25 +11,30 @@ Rama `fotos-sesion-nov`, sin push ni merge. Nada publicado desde aquí.
 
 ## 1. Imágenes
 
-| Lugar | Estado | Origen |
-|---|---|---|
-| Foto principal (grupo, 4:3) | Vacío | Falta foto real del equipo. **No se sustituye con IA.** |
-| El despacho por dentro (4:5) | Vacío | Falta escena real. **No se sustituye con IA.** |
-| Retrato · Marisol (4:5) — va primero | **Puesto** | Foto real 6938 de la sesión de nov. (traje blanco), media figura, ajuste cálido ligero. `img/marisol-*` |
-| Retrato · Jazmín (4:5) — va segunda | Vacío | Jazmín no está identificada en la sesión. **No se sustituye con IA.** |
-| Fachada (3:2) | Vacío | Benito Juárez No. 8. **No se sustituye con IA.** |
-| Servicios (ilustración 3:2) | Puesto | **GENERADA CON IA** (Gemini `gemini-3-pro-image`, 10-nov): balanza, libreta y rosas secas. Sin personas ni texto. `img/ilus-servicios-*` |
-| Asesoría sin costo (ilustración) | Puesta | **GENERADA CON IA** (Gemini `gemini-3-pro-image`, 10-nov): mesa con dos tazas, flores y carpeta junto a la ventana. Sin personas ni texto. `img/ilus-apoyo-*` |
-| Imagen para compartir (`og-temis.jpg`, 1200×630) | Puesta | Hecha con el sello del logo y la tipografía (Cormorant/Jost, OFL). Sin personas. |
+Criterio (Víctor, 10-nov): las mujeres de la sesión de fotos también son de TEMIS. Con nombre solo Marisol, Jazmín, Katie Reséndiz, Ana Karen Maqueda y Olivia Trejo; las demás, solo como ambiente y sin nombre. Nada de fotos con hombres. Ana Karen A. Ledesma no va.
 
-- Las dos ilustraciones de IA llevan `alt=""` (decorativas) y no representan el despacho real. Si TEMIS prefiere no usar IA, se cambian por fotos propias en el mismo formato.
-- El retrato de Jazmín debe igualar el de Marisol (fondo liso claro, media figura, de frente).
-- Alternativas de Marisol: 6926 (mano en el mentón), 6916 o 6934 (cuerpo entero, más recorte).
+| Lugar | Foto | Notas |
+|---|---|---|
+| Foto principal (4:3) | Seleccion-34, recortada a la derecha | Seis mujeres: Olivia (B), C, Marisol (A), Ana Karen Maqueda (D), G y Katie (E). El hombre del extremo derecho queda fuera del recorte sin dejar ninguna parte de él. Alt sin nombres. |
+| Socias · Marisol (4:5), primero | 6938 (traje blanco) | Media figura. |
+| Socias · Jazmín (4:5), segunda | Vacío | Sin foto: no salió en la sesión. |
+| El equipo · Lic. Katie Reséndiz González | Seleccion-24 | Cargo en TEMIS por confirmar. |
+| El equipo · Lic. Ana Karen Maqueda García | Seleccion-22 | Cargo en TEMIS por confirmar. |
+| El equipo · Olivia Denisse Trejo Hernández | Seleccion-16 | «Pasante»; cargo en TEMIS por confirmar. |
+| Asesoría sin costo (4:5) | Seleccion-57 | G de pie con la mano en el hombro de Marisol (sentada). Sustituye a la ilustración de IA, que se quitó del repo. |
+| Contacto (4:3) | Seleccion-41 | Olivia y C, sonrientes. Alt sin nombres. |
+| Servicios (3:2) | **GENERADA CON IA** (Gemini `gemini-3-pro-image`, 10-nov) | Balanza, libreta y rosas secas, sin personas ni texto. |
+| El despacho por dentro (4:5) | Vacío | Falta escena real. No se sustituye con IA. |
+| Fachada (3:2) | Vacío | Benito Juárez No. 8. No se sustituye con IA. |
+| Imagen para compartir (1200×630) | `og-temis.jpg` | Sello y tipografía, sin personas. |
+
+- Todas las fotos llevan el mismo ajuste cálido ligero (ganancia R 1.055 · G 1.035 · B 1.005) para que el fondo gris azulado del estudio pase a blanco cálido. Los retratos son 4:5 de media figura; el encuadre de Olivia es un poco más cerrado porque la toma original es de cuerpo entero.
+- Fuente: ~/Projects/regutt-web/fotos-sesion/seleccion (sesión del 10-nov). Los nombres salen de equipo-ref/EQUIPO.md.
 
 ## 2. Por confirmar (texto)
 
 - Grado de Marisol: la página dice «Mtra.»; el 22-oct se confirmó «Lic. en Derecho», el 10-nov «Mtra.».
-- Nombres de las otras tres titulares y las cuatro pasantes; cédulas.
+- Cargo dentro de TEMIS de Katie, Ana Karen y Olivia; quiénes completan las cinco titulares y las cuatro pasantes; cédulas.
 - Teléfono (es el de REGUTT: 441 130 4944), horario y correo.
 - «Desde 2017» y «2019»: origen del dato no verificado (por eso no está en el JSON-LD).
 - Zonas de atención y «llevamos juicios en la capital».

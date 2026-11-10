@@ -298,7 +298,6 @@ footer a{color:var(--oro-1)}
 .miembro .cuerpo{padding:20px 22px 22px}
 .miembro h3{font-size:1.3rem;font-weight:600}
 .miembro .rol{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--oro-txt);margin-top:7px}
-.cargo-pend{display:inline-block;margin-top:10px;font-size:.78rem;color:#6d5520;background:linear-gradient(135deg,#fffaf0,#fdf3e3);border:1px dashed var(--oro-2);border-radius:8px;padding:4px 10px}
 @media (min-width:600px){.equipo{grid-template-columns:repeat(3,1fr)}}
 
 /* ---------- servicios: áreas con ícono ---------- */
@@ -308,6 +307,7 @@ footer a{color:var(--oro-1)}
 .ilus img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
 .ilus::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(240,220,174,.55);pointer-events:none}
 .ilus-serv{aspect-ratio:3/2}
+.ilus-despacho{aspect-ratio:4/5}
 .areas{display:grid;grid-template-columns:1fr;gap:16px;margin-top:44px}
 .area{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);padding:26px 24px;position:relative;overflow:hidden;
   transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s cubic-bezier(.22,1,.36,1),border-color .3s}
@@ -487,13 +487,11 @@ footer a:hover{color:#fff}
 
 <section id="nosotras"><div class="wrap">
   <div class="dos">
-    <figure class="foto r45">
-      <div>
-        <div class="ic">◉</div>
-        <div class="t">El despacho por dentro</div>
-        <div class="d">Una abogada atendiendo a una clienta en la mesa de juntas, vista desde un lado. Documentos sobre la mesa. Sin mirar a cámara: la escena real de una consulta.</div>
-        <div class="m">Vertical 4:5 · mínimo 1200 px de ancho</div>
-      </div>
+    <figure class="ilus ilus-despacho" data-r>
+      <picture>
+        <source type="image/webp" srcset="img/ilus-despacho-640.webp 640w, img/ilus-despacho-960.webp 960w, img/ilus-despacho-1280.webp 1280w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)">
+        <img src="img/ilus-despacho-960.jpg" srcset="img/ilus-despacho-640.jpg 640w, img/ilus-despacho-960.jpg 960w, img/ilus-despacho-1280.jpg 1280w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)" width="1280" height="1600" loading="lazy" decoding="async" alt="Imagen ilustrativa: una abogada de saco claro, vista de espaldas, revisa documentos con una clienta en una mesa junto a la ventana">
+      </picture>
     </figure>
     <div>
       <p class="eyebrow">Nosotras</p>
@@ -533,13 +531,11 @@ footer a:hover{color:#fff}
     </article>
 
     <article class="socia" data-r>
-      <figure class="foto r45" style="border:0;border-radius:0;border-bottom:1px solid var(--linea)">
-        <div>
-          <div class="ic">◉</div>
-          <div class="t">Retrato · Jazmín</div>
-          <div class="d">Media figura, fondo claro o la pared del despacho desfocada. Vestimenta formal. Expresión amable, de frente.</div>
-          <div class="m">Vertical 4:5 · mismo encuadre que el de Marisol</div>
-        </div>
+      <figure class="retrato">
+        <picture>
+          <source type="image/webp" srcset="img/jazmin-640.webp 640w, img/jazmin-960.webp 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)">
+          <img src="img/jazmin-960.jpg" srcset="img/jazmin-640.jpg 640w, img/jazmin-960.jpg 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Jazmín Balbuena Arriaga, socia fundadora de TEMIS, con traje rojo sobre fondo claro">
+        </picture>
       </figure>
       <div class="cuerpo">
         <h3>Mtra. Jazmín Balbuena Arriaga</h3>
@@ -557,7 +553,7 @@ footer a:hover{color:#fff}
   <div class="equipo-cab" data-r>
     <p class="eyebrow">El equipo</p>
     <div class="filete"></div>
-    <h2>Abogadas y pasantes</h2>
+    <h2>Colaboradoras</h2>
   </div>
   <div class="equipo">
     <article class="miembro" data-r>
@@ -569,7 +565,7 @@ footer a:hover{color:#fff}
       </figure>
       <div class="cuerpo">
         <h3>Lic. Katie Reséndiz González</h3>
-        <p class="cargo-pend">Cargo en TEMIS por confirmar</p>
+        <p class="rol">Colaboradora</p>
       </div>
     </article>
     <article class="miembro" data-r>
@@ -581,7 +577,7 @@ footer a:hover{color:#fff}
       </figure>
       <div class="cuerpo">
         <h3>Lic. Ana Karen Maqueda García</h3>
-        <p class="cargo-pend">Cargo en TEMIS por confirmar</p>
+        <p class="rol">Colaboradora</p>
       </div>
     </article>
     <article class="miembro" data-r>
@@ -593,14 +589,13 @@ footer a:hover{color:#fff}
       </figure>
       <div class="cuerpo">
         <h3>Olivia Denisse Trejo Hernández</h3>
-        <p class="rol">Pasante</p>
-        <p class="cargo-pend">Cargo en TEMIS por confirmar</p>
+        <p class="rol">Colaboradora</p>
       </div>
     </article>
   </div>
 
   <div class="pendiente">
-    <b>Falta por confirmar:</b> el cargo dentro de TEMIS de Katie, Ana Karen y Olivia; quiénes completan las cinco abogadas titulares y las cuatro pasantes, y si quieren publicar sus cédulas profesionales.
+    <b>Falta por confirmar:</b> quiénes completan las cinco abogadas titulares y las cuatro pasantes, y si quieren publicar sus cédulas profesionales.
   </div>
 </div></section>
 
@@ -668,8 +663,8 @@ footer a:hover{color:#fff}
     </div>
     <figure class="ilus ilus-apoyo" data-r style="--d:120ms">
       <picture>
-        <source type="image/webp" srcset="img/foto-apoyo-600.webp 600w, img/foto-apoyo-960.webp 960w" sizes="(min-width:900px) 420px, calc(100vw - 44px)">
-        <img src="img/foto-apoyo-960.jpg" srcset="img/foto-apoyo-600.jpg 600w, img/foto-apoyo-960.jpg 960w" sizes="(min-width:900px) 420px, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Dos integrantes de TEMIS: una de pie, con la mano en el hombro de su compañera, que está sentada">
+        <source type="image/webp" srcset="img/foto-socias-640.webp 640w, img/foto-socias-960.webp 960w, img/foto-socias-1280.webp 1280w" sizes="(min-width:900px) 440px, calc(100vw - 44px)">
+        <img src="img/foto-socias-960.jpg" srcset="img/foto-socias-640.jpg 640w, img/foto-socias-960.jpg 960w, img/foto-socias-1280.jpg 1280w" sizes="(min-width:900px) 440px, calc(100vw - 44px)" width="1280" height="1600" loading="lazy" decoding="async" alt="Las socias fundadoras de TEMIS, ambas de rojo: Marisol Alvarado de pie y Jazmín Balbuena sentada">
       </picture>
     </figure>
   </div>

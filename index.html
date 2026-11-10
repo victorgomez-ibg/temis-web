@@ -5,8 +5,57 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TEMIS Estudio Jurídico — Abogadas en Cadereyta de Montes</title>
 <meta name="description" content="Despacho de abogadas en Cadereyta de Montes, Querétaro. Derecho familiar, civil, administrativo, agrario y laboral. Asesoría sin costo para mujeres que viven violencia, adultos mayores y personas de escasos recursos.">
-<meta name="robots" content="noindex,nofollow"><!-- QUITAR al publicar en temisestudiojuridico.com -->
-<link rel="icon" href="img/sello.jpg">
+<!-- BORRADOR: el noindex se queda hasta el OK de publicación. Al publicar: quitar esta línea
+     y la barra .draft. robots.txt ya permite rastrear (para que Google lea este noindex). -->
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://temisestudiojuridico.com/">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="TEMIS Estudio Jurídico">
+<meta property="og:url" content="https://temisestudiojuridico.com/">
+<meta property="og:title" content="TEMIS Estudio Jurídico — Abogadas en Cadereyta de Montes">
+<meta property="og:description" content="Despacho de abogadas en Cadereyta de Montes, Querétaro. Familiar, civil, administrativo, agrario y laboral.">
+<meta property="og:image" content="https://temisestudiojuridico.com/img/og-temis.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo de TEMIS Estudio Jurídico: Temis con la balanza, en oro sobre blanco y rosa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TEMIS Estudio Jurídico — Abogadas en Cadereyta de Montes">
+<meta name="twitter:description" content="Despacho de abogadas en Cadereyta de Montes, Querétaro. Familiar, civil, administrativo, agrario y laboral.">
+<meta name="twitter:image" content="https://temisestudiojuridico.com/img/og-temis.jpg">
+
+<!-- Solo datos que ya están en la página. Sin teléfono (es el de REGUTT, por confirmar),
+     sin horario ni correo (por confirmar) y sin año de fundación (no verificado). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "@id": "https://temisestudiojuridico.com/#despacho",
+  "name": "TEMIS Estudio Jurídico",
+  "url": "https://temisestudiojuridico.com/",
+  "logo": "https://temisestudiojuridico.com/img/apple-touch-icon.png",
+  "image": "https://temisestudiojuridico.com/img/og-temis.jpg",
+  "description": "Despacho de abogadas en Cadereyta de Montes, Querétaro. Derecho familiar, civil, administrativo, agrario y laboral, contratos y gestión notarial.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Benito Juárez No. 8, Col. Centro",
+    "addressLocality": "Cadereyta de Montes",
+    "addressRegion": "Querétaro",
+    "postalCode": "76500",
+    "addressCountry": "MX"
+  },
+  "areaServed": ["Cadereyta de Montes", "Ezequiel Montes", "San Juan del Río", "San Joaquín", "Querétaro"],
+  "knowsAbout": ["Derecho familiar", "Derecho civil", "Derecho administrativo", "Derecho agrario", "Derecho laboral", "Contratos", "Gestión notarial"],
+  "founder": [
+    {"@type": "Person", "name": "Jazmín Balbuena Arteaga"},
+    {"@type": "Person", "name": "Marisol Alvarado Ángeles"}
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&display=swap">
@@ -31,15 +80,18 @@
   --rosa-4:#c98f86;
   --oro-1:#f0dcae;
   --oro-2:#d4a84b;
-  --oro-3:#a9792c;
+  --oro-3:#a9792c;  /* solo líneas e íconos (3.85:1), nunca texto pequeño */
+  --oro-txt:#866020; /* oro para texto pequeño: 4.66:1 aun sobre rosa-2 */
   --oro-4:#7d5a1f;
   --tinta:#2a2320;
   --tinta-2:#5c5049;
-  --tinta-3:#8a7d75;
+  --tinta-3:#6f635c;  /* 5.4:1 o más sobre blanco, crema y rosa-1 */
   --linea:#f0e4e0;
   --verde:#3d6b55;
   --rojo:#a8453c;
   --oro-grad:linear-gradient(135deg,#c79a3e 0%,#f0dcae 28%,#b8862f 58%,#e8cf92 80%,#a9792c 100%);
+  --oro-btn:linear-gradient(135deg,#d4a84b 0%,#f0dcae 30%,#c79a3e 62%,#e8cf92 84%,#b8862f 100%); /* con texto tinta: 4.77:1 o más en todo el degradado */
+  --oro-grad-txt:linear-gradient(135deg,#9a6e28 0%,#b8862f 45%,#7d5a1f 100%); /* texto grande: 3.2:1 o más */
   --r:18px;
   --sombra-s:0 1px 2px rgba(42,35,32,.04),0 8px 24px -12px rgba(42,35,32,.14);
   --sombra-m:0 2px 4px rgba(42,35,32,.04),0 24px 56px -24px rgba(169,121,44,.3);
@@ -58,8 +110,8 @@ h1,h2,h3{font-family:var(--fd);font-weight:500;line-height:1.08;letter-spacing:-
 h1{font-size:clamp(2.6rem,8.4vw,5rem)}
 h2{font-size:clamp(2rem,5.4vw,3.2rem)}
 h3{font-size:1.3rem;font-weight:600}
-.eyebrow{font-family:var(--fb);font-size:.7rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--oro-3)}
-.oro-txt{background:var(--oro-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{font-family:var(--fb);font-size:.7rem;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--oro-txt)}
+.oro-txt{background:var(--oro-grad-txt);-webkit-background-clip:text;background-clip:text;color:transparent}
 .filete{width:72px;height:2px;background:var(--oro-grad);margin:20px 0;border-radius:2px}
 .filete.c{margin-inline:auto}
 .centro{text-align:center}
@@ -69,12 +121,13 @@ h3{font-size:1.3rem;font-weight:600}
 .draft b{color:#fff}
 
 /* ---------- barra ---------- */
-.bar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--linea)}
+.bar{position:sticky;top:0;z-index:50;transition:box-shadow .3s;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--linea)}
 .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:11px}
 .marca{display:flex;align-items:center;gap:12px;min-width:0;text-decoration:none}
 .marca img{width:46px;height:46px;object-fit:cover;object-position:center 22%;border-radius:50%;border:1px solid var(--oro-1);flex:0 0 auto;background:#fff}
 .marca .n{font-family:var(--fd);font-size:1.3rem;font-weight:600;letter-spacing:.14em;line-height:1}
-.marca .s{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--tinta-3);margin-top:3px}
+.marca>span{display:flex;flex-direction:column;min-width:0}
+.marca .s{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;color:var(--tinta-3);margin-top:5px;white-space:nowrap}
 .bar nav{display:none;gap:30px;font-size:.88rem;font-weight:500;letter-spacing:.01em}
 .bar nav a{text-decoration:none;color:var(--tinta-2);position:relative;padding-block:4px}
 .bar nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:var(--oro-grad);transition:right .28s cubic-bezier(.22,1,.36,1)}
@@ -82,11 +135,12 @@ h3{font-size:1.3rem;font-weight:600}
 
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:.95rem;letter-spacing:.01em;text-decoration:none;border:1px solid transparent;min-height:48px;transition:transform .14s,box-shadow .24s,background .24s}
 .btn:active{transform:translateY(1px)}
-.btn-oro{background:var(--oro-grad);color:#fff;box-shadow:0 4px 18px -6px rgba(169,121,44,.6)}
+.btn{-webkit-tap-highlight-color:transparent}
+.btn-oro{background:var(--oro-btn);color:var(--tinta);box-shadow:0 4px 18px -6px rgba(169,121,44,.6)}
 .btn-oro:hover{box-shadow:0 8px 26px -8px rgba(169,121,44,.75)}
 .btn-linea{border-color:var(--rosa-3);color:var(--oro-4);background:rgba(255,255,255,.7)}
 .btn-linea:hover{background:var(--rosa-1);border-color:var(--oro-2)}
-.bar .btn{padding:10px 20px;min-height:42px;font-size:.86rem}
+.bar .btn{padding:10px 20px;min-height:44px;font-size:.86rem;white-space:nowrap;flex:0 0 auto}
 
 /* ---------- apertura ---------- */
 .hero{position:relative;overflow:hidden;background:
@@ -94,7 +148,7 @@ h3{font-size:1.3rem;font-weight:600}
   radial-gradient(760px 520px at -6% 102%,var(--rosa-1) 0%,transparent 60%),
   var(--blanco)}
 .hero .wrap{padding-block:60px 56px;position:relative;display:grid;grid-template-columns:1fr;gap:42px;align-items:center}
-.hero-sello{width:98px;margin-bottom:22px}
+.hero-sello{width:112px;height:auto;margin:0 0 22px -6px}
 .hero h1 em{font-style:italic;font-weight:400}
 .hero .lede{margin-top:22px;font-size:1.16rem;color:var(--tinta-2);max-width:42ch;font-weight:300}
 .hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
@@ -143,7 +197,7 @@ section .wrap{padding-block:70px}
 .socia:hover{box-shadow:var(--sombra-m);transform:translateY(-3px)}
 .socia .cuerpo{padding:24px}
 .socia h3{font-size:1.5rem;font-weight:600}
-.socia .rol{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--oro-3);margin-top:7px}
+.socia .rol{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--oro-txt);margin-top:7px}
 .socia ul{list-style:none;margin-top:18px;display:grid;gap:8px}
 .socia li{font-size:.95rem;color:var(--tinta-2);padding-left:18px;position:relative;font-weight:300}
 .socia li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:1.5px;background:var(--oro-2)}
@@ -180,7 +234,7 @@ section .wrap{padding-block:70px}
 /* citas */
 .cita{background:var(--rosa-1);border:1px solid var(--rosa-2);border-radius:var(--r);padding:30px;margin-top:38px}
 .cita p{font-family:var(--fd);font-size:clamp(1.3rem,3.2vw,1.8rem);line-height:1.35;color:var(--tinta);font-style:italic}
-.cita .q{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-3);font-weight:600;margin-top:16px;font-family:var(--fb);font-style:normal}
+.cita .q{font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-txt);font-weight:600;margin-top:16px;font-family:var(--fb);font-style:normal}
 
 /* preguntas */
 .faq{margin-top:38px;border:1px solid var(--linea);border-radius:var(--r);overflow:hidden}
@@ -226,6 +280,47 @@ footer strong{color:#fff;font-weight:600}
 footer a{color:var(--oro-1)}
 .legal{font-size:.76rem;color:#9a8e86;line-height:1.65;border-top:1px solid #3c332e;padding-top:20px}
 
+/* ---------- pulido ---------- */
+p{text-wrap:pretty}
+.saltar{position:absolute;left:12px;top:-60px;z-index:100;background:var(--tinta);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.9rem}
+.saltar:focus{top:12px}
+.bar.sombra{box-shadow:0 6px 24px -14px rgba(42,35,32,.35)}
+.btn-oro{text-shadow:0 1px 0 rgba(255,255,255,.35)}
+.btn-oro:focus-visible,.btn-linea:focus-visible{outline-offset:4px}
+.btn-linea{color:var(--oro-4)}
+section h2{max-width:22ch}
+.centro h2{margin-inline:auto}
+.serv{transition:box-shadow .3s,transform .3s,border-color .3s}
+.serv:hover{box-shadow:var(--sombra-m);transform:translateY(-3px);border-color:var(--rosa-2)}
+.serv h3{display:flex;align-items:center;gap:10px}
+.serv h3::before{content:"";width:7px;height:7px;background:var(--oro-2);transform:rotate(45deg);flex:0 0 auto}
+.socia .cuerpo{padding:26px 26px 28px}
+.retrato img{transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.socia:hover .retrato img{transform:scale(1.02)}
+.faq summary:focus-visible{outline-offset:-4px}
+.ficha dd a{text-decoration:underline;text-decoration-color:var(--oro-1);text-underline-offset:4px}
+.fina{font-weight:400}
+input::placeholder,textarea::placeholder{color:var(--tinta-3);opacity:.85}
+.ok a{color:var(--oro-4);font-weight:600;text-underline-offset:3px}
+footer .top p{line-height:1.6}
+footer a:hover{color:#fff}
+
+/* encabezado en pantallas angostas: nada se parte en dos líneas */
+@media (max-width:420px){
+  .bar .wrap{gap:10px;padding-block:9px}
+  .marca{gap:9px}
+  .marca img{width:40px;height:40px}
+  .marca .n{font-size:1.18rem;letter-spacing:.12em}
+  .marca .s{font-size:.53rem;letter-spacing:.2em;margin-top:4px}
+  .bar .btn{padding:9px 15px;font-size:.8rem}
+}
+@media (max-width:359px){
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .marca img{width:34px;height:34px}
+  .marca .s{letter-spacing:.14em}
+  .bar .btn{padding:8px 12px}
+}
+
 @media (min-width:900px){
   .bar nav{display:flex}
   .hero .wrap{grid-template-columns:1.04fr .96fr;padding-block:88px 84px;gap:56px}
@@ -242,10 +337,11 @@ footer a{color:var(--oro-1)}
 </style>
 </head>
 <body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 
 <div class="draft"><b>BORRADOR</b> — los recuadros rosas marcan dónde van las fotos de la sesión y qué debe salir en cada una. Lo amarillo falta por confirmar.</div>
 
-<div class="bar"><div class="wrap">
+<div class="bar" id="barra"><div class="wrap">
   <a class="marca" href="#inicio">
     <img src="img/sello.jpg" alt="TEMIS Estudio Jurídico">
     <span>
@@ -263,9 +359,10 @@ footer a{color:var(--oro-1)}
   <a class="btn btn-oro" href="#contacto">Consulta tu caso</a>
 </div></div>
 
+<main id="contenido">
 <header class="hero" id="inicio"><div class="wrap">
   <div>
-    <img class="hero-sello" src="img/sello.jpg" alt="">
+    <img class="hero-sello" src="img/sello-hero.png" width="380" height="320" alt="">
     <p class="eyebrow">Cadereyta de Montes, Querétaro</p>
     <h1>Mujeres que buscan la <em class="oro-txt">justicia social</em></h1>
     <p class="lede">Un despacho de abogadas de Cadereyta. Llevamos asuntos familiares, civiles, administrativos, agrarios y laborales. Lo que empezamos, lo terminamos.</p>
@@ -540,7 +637,7 @@ footer a{color:var(--oro-1)}
       <p class="fina" style="margin-top:8px">Lo que nos cuentes es confidencial.</p>
       <form id="f" novalidate>
         <label>Tu nombre
-          <input id="nombre" type="text" autocomplete="name" placeholder="Como te llamas">
+          <input id="nombre" type="text" autocomplete="name" placeholder="Cómo te llamas">
         </label>
         <label>Tu WhatsApp
           <input id="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="441 000 0000">
@@ -561,14 +658,16 @@ footer a{color:var(--oro-1)}
         <label>Cuéntanos lo que quieras <span class="fina" style="display:inline">(opcional)</span>
           <textarea id="detalle" placeholder="Escribe solo lo que te sientas cómoda compartiendo por aquí."></textarea>
         </label>
-        <p id="error" class="fina" style="color:var(--rojo);font-weight:600" hidden>Escribe tu nombre y tu WhatsApp para continuar.</p>
-        <a class="btn btn-oro" id="enviar" href="#" rel="noopener" style="width:100%">Enviar por WhatsApp</a>
-        <p id="ok" class="ok" hidden>Se abrió WhatsApp con tu mensaje escrito. Solo falta que lo envíes.</p>
+        <p id="error" class="fina" style="color:var(--rojo);font-weight:600" role="alert" hidden>Escribe tu nombre y tu WhatsApp para continuar.</p>
+        <a class="btn btn-oro" id="enviar" href="#" target="_blank" rel="noopener" style="width:100%">Enviar por WhatsApp</a>
+        <p id="ok" class="ok" role="status" hidden>Te llevamos a WhatsApp con tu mensaje listo; solo falta que lo envíes ahí. Si no se abrió, <a id="ok-wa" href="#" target="_blank" rel="noopener">toca aquí para abrir WhatsApp</a>.</p>
         <p class="fina">Tus datos se usan únicamente para responderte. No se guardan en esta página ni se envían a ningún otro servicio.</p>
       </form>
     </div>
   </div>
 </div></section>
+
+</main>
 
 <footer><div class="wrap">
   <div class="top">
@@ -605,22 +704,39 @@ footer a{color:var(--oro-1)}
       + "Asunto: " + val('asunto');
     var d = val('detalle');
     if (d) t += "\n\nMi situación: " + d;
-    cta.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+    var url = "https://wa.me/" + WA + "?text=" + encodeURIComponent(t);
+    cta.href = url;
+    var otra = document.getElementById('ok-wa');
+    if (otra) otra.href = url;
   }
   f.addEventListener('input', armar);
   f.addEventListener('change', armar);
   armar();
 
   cta.addEventListener('click', function(e){
-    if (!val('nombre') || !val('tel')) {
+    var digitos = val('tel').replace(/\D/g, '').length;
+    if (!val('nombre') || digitos < 10) {
       e.preventDefault();
+      ok.hidden = true;
+      err.textContent = !val('nombre')
+        ? 'Escribe tu nombre para continuar.'
+        : 'Escribe tu WhatsApp a 10 dígitos para continuar.';
       err.hidden = false;
       document.getElementById(val('nombre') ? 'tel' : 'nombre').focus();
       return;
     }
+    // No podemos saber si WhatsApp se abrió de verdad: el aviso lo dice así
+    // y deja a la mano el mismo enlace por si no se abrió.
+    armar();
     err.hidden = true;
     ok.hidden = false;
   });
+
+  // sombra suave en la barra al desplazarse
+  var barra = document.getElementById('barra');
+  function sombra(){ barra.classList.toggle('sombra', window.scrollY > 8); }
+  window.addEventListener('scroll', sombra, {passive:true});
+  sombra();
 })();
 </script>
 </body>

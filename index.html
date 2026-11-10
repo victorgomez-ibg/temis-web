@@ -2,6 +2,12 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<script>
+/* Marca que hay JS para ocultar lo que aparece al bajar. Si el script de abajo no
+   arranca en 2.5 s, se quita la marca y todo queda visible. */
+document.documentElement.classList.add('js');
+setTimeout(function(){ if(!window.__temisListo) document.documentElement.classList.remove('js'); }, 2500);
+</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TEMIS Estudio Jurídico — Abogadas en Cadereyta de Montes</title>
 <meta name="description" content="Despacho de abogadas en Cadereyta de Montes, Querétaro. Derecho familiar, civil, administrativo, agrario y laboral. Asesoría sin costo para mujeres que viven violencia, adultos mayores y personas de escasos recursos.">
@@ -51,8 +57,8 @@
   "areaServed": ["Cadereyta de Montes", "Ezequiel Montes", "San Juan del Río", "San Joaquín", "Querétaro"],
   "knowsAbout": ["Derecho familiar", "Derecho civil", "Derecho administrativo", "Derecho agrario", "Derecho laboral", "Contratos", "Gestión notarial"],
   "founder": [
-    {"@type": "Person", "name": "Jazmín Balbuena Arteaga"},
-    {"@type": "Person", "name": "Marisol Alvarado Ángeles"}
+    {"@type": "Person", "name": "Marisol Alvarado Ángeles"},
+    {"@type": "Person", "name": "Jazmín Balbuena Arteaga"}
   ]
 }
 </script>
@@ -121,7 +127,7 @@ h3{font-size:1.3rem;font-weight:600}
 .draft b{color:#fff}
 
 /* ---------- barra ---------- */
-.bar{position:sticky;top:0;z-index:50;transition:box-shadow .3s;background:rgba(255,255,255,.88);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--linea)}
+.bar{position:sticky;top:0;z-index:50;transition:box-shadow .3s;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--linea)}
 .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:11px}
 .marca{display:flex;align-items:center;gap:12px;min-width:0;text-decoration:none}
 .marca img{width:46px;height:46px;object-fit:cover;object-position:center 22%;border-radius:50%;border:1px solid var(--oro-1);flex:0 0 auto;background:#fff}
@@ -202,14 +208,6 @@ section .wrap{padding-block:70px}
 .socia li{font-size:.95rem;color:var(--tinta-2);padding-left:18px;position:relative;font-weight:300}
 .socia li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:1.5px;background:var(--oro-2)}
 
-/* servicios */
-.servicios{display:grid;grid-template-columns:1fr;gap:20px;margin-top:40px}
-.serv{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);padding:28px;position:relative;overflow:hidden}
-.serv::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--oro-grad)}
-.serv h3{margin-bottom:14px}
-.serv ul{list-style:none;display:grid;gap:8px;font-size:.94rem;color:var(--tinta-2);font-weight:300}
-.serv li{padding-left:16px;position:relative}
-.serv li::before{content:"·";position:absolute;left:3px;color:var(--oro-2);font-weight:700}
 
 /* bloque de apoyo */
 .apoyo{background:var(--tinta);color:#f6efe9;position:relative;overflow:hidden}
@@ -221,7 +219,7 @@ section .wrap{padding-block:70px}
 .apoyo .lista{display:grid;grid-template-columns:1fr;gap:16px;margin-top:38px}
 .apoyo .item{border:1px solid rgba(240,220,174,.26);border-radius:14px;padding:22px;background:rgba(255,255,255,.035)}
 .apoyo .item b{display:block;font-family:var(--fd);font-size:1.3rem;font-weight:600;color:var(--oro-1);margin-bottom:6px}
-.apoyo .item span{font-size:.93rem;color:#d9cec6;font-weight:300}
+.apoyo .item>span:not(.ico-caja){font-size:.93rem;color:#d9cec6;font-weight:300}
 .apoyo .cierre{margin-top:34px;font-size:1.02rem;color:#eadfd8;font-weight:300}
 
 /* razones */
@@ -280,6 +278,86 @@ footer strong{color:#fff;font-weight:600}
 footer a{color:var(--oro-1)}
 .legal{font-size:.76rem;color:#9a8e86;line-height:1.65;border-top:1px solid #3c332e;padding-top:20px}
 
+/* ---------- servicios: áreas con ícono ---------- */
+.serv-cab{display:grid;gap:30px;align-items:center}
+.serv-lede{margin-top:18px;color:var(--tinta-2);font-weight:400;font-size:.95rem;letter-spacing:.02em;max-width:40ch}
+.ilus{border-radius:var(--r);overflow:hidden;position:relative;box-shadow:var(--sombra-m);background:var(--rosa-1)}
+.ilus img{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.ilus::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(240,220,174,.55);pointer-events:none}
+.ilus-serv{aspect-ratio:3/2}
+.areas{display:grid;grid-template-columns:1fr;gap:16px;margin-top:44px}
+.area{background:var(--blanco);border:1px solid var(--linea);border-radius:var(--r);padding:26px 24px;position:relative;overflow:hidden;
+  transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s cubic-bezier(.22,1,.36,1),border-color .3s}
+.area::after{content:"";position:absolute;left:24px;right:24px;bottom:0;height:2px;background:var(--oro-grad);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.area:hover{transform:translateY(-4px);box-shadow:var(--sombra-m);border-color:var(--rosa-2)}
+.area:hover::after{transform:scaleX(1)}
+.area h3{font-size:1.4rem;margin-top:16px}
+.area ul{list-style:none;display:grid;gap:7px;margin-top:12px;font-size:.94rem;color:var(--tinta-2)}
+.area li{padding-left:16px;position:relative}
+.area li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border:1.2px solid var(--oro-2);transform:rotate(45deg)}
+.area-fam{background:linear-gradient(160deg,#fff 0%,#fff 55%,var(--rosa-1) 100%)}
+.area-fam ul{grid-template-columns:1fr;column-gap:22px}
+.ico-caja{display:inline-grid;place-items:center;width:54px;height:54px;border-radius:50%;background:linear-gradient(145deg,#fff,var(--rosa-1));border:1px solid var(--oro-1);color:var(--oro-4);
+  transition:transform .45s cubic-bezier(.22,1,.36,1)}
+.area:hover .ico-caja,.apoyo .item:hover .ico-caja{transform:translateY(-2px) rotate(-4deg)}
+.ico{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- asesoría sin costo ---------- */
+.apoyo-cab{display:grid;gap:34px;align-items:center}
+.ilus-apoyo{aspect-ratio:4/3;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.apoyo .item{transition:transform .45s cubic-bezier(.22,1,.36,1),border-color .3s,background .3s}
+.apoyo .item:hover{transform:translateY(-4px);border-color:rgba(240,220,174,.5);background:rgba(255,255,255,.06)}
+.apoyo .ico-caja{width:48px;height:48px;margin-bottom:16px;background:rgba(255,255,255,.05);border-color:rgba(240,220,174,.4);color:var(--oro-1)}
+.apoyo .ico{width:27px;height:27px}
+
+/* ---------- movimiento: solo transform/opacity, ease-out ---------- */
+@keyframes subir{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes trazo{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes pulso{0%{opacity:.55;transform:scale(1)}70%,100%{opacity:0;transform:scale(1.08,1.35)}}
+@media (prefers-reduced-motion:no-preference){
+  .js [data-r]{opacity:0;transform:translateY(18px);transition:opacity .65s cubic-bezier(.22,1,.36,1) var(--d,0ms),transform .65s cubic-bezier(.22,1,.36,1) var(--d,0ms)}
+  .js [data-r].vis{opacity:1;transform:none}
+  .js .area[data-r].vis{transition:opacity .65s cubic-bezier(.22,1,.36,1) var(--d,0ms),transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s,border-color .3s}
+  .js .hero .wrap>div>*,.js .hero .wrap>figure{animation:subir .7s cubic-bezier(.22,1,.36,1) both}
+  .js .hero .wrap>div>:nth-child(2){animation-delay:.06s}
+  .js .hero .wrap>div>:nth-child(3){animation-delay:.12s}
+  .js .hero .wrap>div>:nth-child(4){animation-delay:.2s}
+  .js .hero .wrap>div>:nth-child(5){animation-delay:.28s}
+  .js .hero .wrap>div>:nth-child(6){animation-delay:.34s}
+  .js .hero .wrap>figure{animation-delay:.3s}
+  .js .ico path{stroke-dasharray:1 1;stroke-dashoffset:0}
+  .js .vis .ico path,.js .vis.ico path{animation:trazo .7s cubic-bezier(.22,1,.36,1) both;animation-delay:calc(var(--d,0ms) + .2s)}
+  .area:hover .ico path,.apoyo .item:hover .ico path{animation:trazo .7s cubic-bezier(.22,1,.36,1) both}
+  .bar .marca,.bar .btn{transition:transform .4s cubic-bezier(.22,1,.36,1)}
+  .bar.sombra .marca{transform:scale(.92)}
+  .bar.sombra .btn{transform:scale(.95)}
+  #enviar{position:relative;isolation:isolate}
+  #enviar::before{content:"";position:absolute;inset:0;border-radius:inherit;border:1.5px solid var(--oro-2);z-index:-1;animation:pulso 2.8s cubic-bezier(.22,1,.36,1) 1s infinite;pointer-events:none}
+}
+.marca{transform-origin:left center}
+.bar .btn{transform-origin:right center}
+/* subrayado del menú con transform */
+.bar nav a::after{right:0!important;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,1,.36,1)!important}
+.bar nav a:hover::after,.bar nav a:focus-visible::after{transform:scaleX(1)}
+
+@media (min-width:640px){
+  .areas{grid-template-columns:1fr 1fr}
+  .area-fam{grid-column:1/-1}
+  .area-fam ul{grid-template-columns:1fr 1fr}
+}
+@media (min-width:900px){
+  .serv-cab{grid-template-columns:1fr 1.1fr;gap:60px}
+  .areas{grid-template-columns:repeat(3,1fr);gap:20px}
+  .area-fam{grid-column:1;grid-row:1 / span 2}
+  .area-fam ul{grid-template-columns:1fr}
+  .apoyo-cab{grid-template-columns:1.2fr .8fr;gap:60px}
+  .ilus-apoyo{justify-self:end;width:100%;max-width:420px;aspect-ratio:4/5}
+}
+@media (min-width:1100px){
+  .areas{grid-template-columns:1.25fr 1fr 1fr 1fr}
+  .area-fam{grid-row:1 / span 2}
+}
+
 /* ---------- pulido ---------- */
 p{text-wrap:pretty}
 .saltar{position:absolute;left:12px;top:-60px;z-index:100;background:var(--tinta);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.9rem}
@@ -290,10 +368,6 @@ p{text-wrap:pretty}
 .btn-linea{color:var(--oro-4)}
 section h2{max-width:22ch}
 .centro h2{margin-inline:auto}
-.serv{transition:box-shadow .3s,transform .3s,border-color .3s}
-.serv:hover{box-shadow:var(--sombra-m);transform:translateY(-3px);border-color:var(--rosa-2)}
-.serv h3{display:flex;align-items:center;gap:10px}
-.serv h3::before{content:"";width:7px;height:7px;background:var(--oro-2);transform:rotate(45deg);flex:0 0 auto}
 .socia .cuerpo{padding:26px 26px 28px}
 .retrato img{transition:transform .8s cubic-bezier(.22,1,.36,1)}
 .socia:hover .retrato img{transform:scale(1.02)}
@@ -327,7 +401,6 @@ footer a:hover{color:#fff}
   section .wrap{padding-block:100px}
   .dos{grid-template-columns:1fr 1fr;gap:60px}
   .socias{grid-template-columns:1fr 1fr;gap:30px}
-  .servicios{grid-template-columns:repeat(3,1fr)}
   .razones{grid-template-columns:1fr 1fr;gap:34px 48px}
   .apoyo .lista{grid-template-columns:repeat(3,1fr)}
   footer .top{grid-template-columns:auto 1fr;gap:34px}
@@ -415,7 +488,26 @@ footer a:hover{color:#fff}
   </div>
 
   <div class="socias">
-    <article class="socia">
+    <article class="socia" data-r>
+      <figure class="retrato">
+        <picture>
+          <source type="image/webp" srcset="img/marisol-600.webp 600w, img/marisol-960.webp 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)">
+          <img src="img/marisol-960.jpg" srcset="img/marisol-600.jpg 600w, img/marisol-960.jpg 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Marisol Alvarado Ángeles, socia fundadora de TEMIS, con traje blanco sobre fondo claro">
+        </picture>
+      </figure>
+      <div class="cuerpo">
+        <h3>Mtra. Marisol Alvarado Ángeles</h3>
+        <p class="rol">Socia fundadora · Civil y agrario</p>
+        <ul>
+          <li>Juicios civiles</li>
+          <li>Asuntos administrativos</li>
+          <li>Derecho agrario</li>
+          <li>Materia laboral</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="socia" data-r>
       <figure class="foto r45" style="border:0;border-radius:0;border-bottom:1px solid var(--linea)">
         <div>
           <div class="ic">◉</div>
@@ -436,25 +528,6 @@ footer a:hover{color:#fff}
         </ul>
       </div>
     </article>
-
-    <article class="socia">
-      <figure class="retrato">
-        <picture>
-          <source type="image/webp" srcset="img/marisol-600.webp 600w, img/marisol-960.webp 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)">
-          <img src="img/marisol-960.jpg" srcset="img/marisol-600.jpg 600w, img/marisol-960.jpg 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Marisol Alvarado Ángeles, socia fundadora de TEMIS, con traje blanco sobre fondo claro">
-        </picture>
-      </figure>
-      <div class="cuerpo">
-        <h3>Mtra. Marisol Alvarado Ángeles</h3>
-        <p class="rol">Socia fundadora · Civil y agrario</p>
-        <ul>
-          <li>Juicios civiles</li>
-          <li>Asuntos administrativos</li>
-          <li>Derecho agrario</li>
-          <li>Materia laboral</li>
-        </ul>
-      </div>
-    </article>
   </div>
 
   <div class="pendiente">
@@ -463,61 +536,80 @@ footer a:hover{color:#fff}
 </div></section>
 
 <section class="rosa" id="servicios"><div class="wrap">
-  <div class="centro">
-    <p class="eyebrow">Servicios</p>
-    <div class="filete c"></div>
-    <h2>En qué podemos ayudarte</h2>
+  <div class="serv-cab">
+    <div data-r>
+      <p class="eyebrow">Servicios</p>
+      <div class="filete"></div>
+      <h2>En qué podemos ayudarte</h2>
+      <p class="serv-lede">Familiar · Civil · Administrativo · Agrario · Laboral · Contratos · Gestión notarial</p>
+    </div>
+    <figure class="ilus ilus-serv" data-r style="--d:120ms">
+      <picture>
+        <source type="image/webp" srcset="img/ilus-servicios-800.webp 800w, img/ilus-servicios-1200.webp 1200w" sizes="(min-width:900px) 560px, calc(100vw - 44px)">
+        <img src="img/ilus-servicios-1200.jpg" srcset="img/ilus-servicios-800.jpg 800w, img/ilus-servicios-1200.jpg 1200w" sizes="(min-width:900px) 560px, calc(100vw - 44px)" width="1200" height="800" loading="lazy" decoding="async" alt="">
+      </picture>
+    </figure>
   </div>
-  <div class="servicios">
-    <div class="serv">
+  <div class="areas">
+    <article class="area area-fam" data-r>
+      <span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 11.2 12 4l9 7.2"/><path pathLength="1" d="M5.5 9.5V20h13V9.5"/><path pathLength="1" d="M12 17.2s-3.2-1.9-3.2-3.9a1.7 1.7 0 0 1 3.2-.8 1.7 1.7 0 0 1 3.2.8c0 2-3.2 3.9-3.2 3.9z"/></svg></span>
       <h3>Familia</h3>
-      <ul>
-        <li>Pensiones alimenticias</li>
-        <li>Divorcios</li>
-        <li>Custodias y convivencias</li>
-        <li>Pérdida de patria potestad</li>
-        <li>Juicios sucesorios</li>
-        <li>Medidas cautelares y urgentes</li>
-        <li>Convenios de pensión</li>
-        <li>Rectificación de actas</li>
-        <li>Adopciones</li>
-        <li>Reconocimiento de paternidad</li>
-        <li>Repatriación</li>
-      </ul>
-    </div>
-    <div class="serv">
-      <h3>Civil, agrario y laboral</h3>
-      <ul>
-        <li>Juicios civiles</li>
-        <li>Asuntos administrativos</li>
-        <li>Derecho agrario</li>
-        <li>Conflictos laborales</li>
-        <li>Jurisdicciones voluntarias</li>
-      </ul>
-    </div>
-    <div class="serv">
-      <h3>Contratos</h3>
-      <ul>
-        <li>Compraventa</li>
-        <li>Arrendamiento</li>
-        <li>Comodato</li>
-        <li>Prestación de servicios</li>
-      </ul>
-    </div>
+      <ul><li>Pensiones alimenticias</li><li>Divorcios</li><li>Custodias y convivencias</li><li>Pérdida de patria potestad</li><li>Juicios sucesorios</li><li>Medidas cautelares y urgentes</li><li>Convenios de pensión</li><li>Rectificación de actas</li><li>Adopciones</li><li>Reconocimiento de paternidad</li><li>Repatriación</li></ul>
+    </article>
+      <article class="area" data-r style="--d:0ms">
+        <span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 9 12 4l9 5"/><path pathLength="1" d="M4 9.5h16"/><path pathLength="1" d="M6.5 10v7M10.2 10v7M13.8 10v7M17.5 10v7"/><path pathLength="1" d="M4 17.5h16M3 20.5h18"/></svg></span>
+        <h3>Civil</h3>
+        <ul><li>Juicios civiles</li><li>Jurisdicciones voluntarias</li></ul>
+      </article>
+      <article class="area" data-r style="--d:70ms">
+        <span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M7 3h7.5L19 7.5V21H7z"/><path pathLength="1" d="M14.5 3v4.5H19"/><path pathLength="1" d="M10 11h6M10 14h6M10 17h3.5"/></svg></span>
+        <h3>Administrativo</h3>
+        <ul><li>Asuntos administrativos</li></ul>
+      </article>
+      <article class="area" data-r style="--d:140ms">
+        <span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 20.5h18"/><path pathLength="1" d="M5 17.5c3.5-1.2 10.5-1.2 14 0"/><path pathLength="1" d="M12 16V8.5"/><path pathLength="1" d="M12 11c0-3.4 2.2-5.6 5.6-5.6 0 3.4-2.2 5.6-5.6 5.6z"/><path pathLength="1" d="M12 12.8c0-2.8-1.9-4.6-4.7-4.6 0 2.8 1.9 4.6 4.7 4.6z"/></svg></span>
+        <h3>Agrario</h3>
+        <ul><li>Derecho agrario</li></ul>
+      </article>
+      <article class="area" data-r style="--d:210ms">
+        <span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M5 7.5h14a2 2 0 0 1 2 2V18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5a2 2 0 0 1 2-2z"/><path pathLength="1" d="M9 7.5V5.5a1.5 1.5 0 0 1 1.5-1.5h3A1.5 1.5 0 0 1 15 5.5v2"/><path pathLength="1" d="M3 12.5h18"/><path pathLength="1" d="M10.8 12.5v2h2.4v-2"/></svg></span>
+        <h3>Laboral</h3>
+        <ul><li>Conflictos laborales</li></ul>
+      </article>
+      <article class="area" data-r style="--d:280ms">
+        <span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M6 3h9l4 4v14H6z"/><path pathLength="1" d="M15 3v4h4"/><path pathLength="1" d="M9 10h7M9 13h5"/><path pathLength="1" d="M8.6 18.2c1-1.6 2-1.6 2.5 0s1.6 1.6 2.6 0 1.6-1.1 3 0"/></svg></span>
+        <h3>Contratos</h3>
+        <ul><li>Compraventa</li><li>Arrendamiento</li><li>Comodato</li><li>Prestación de servicios</li></ul>
+      </article>
+      <article class="area" data-r style="--d:350ms">
+        <span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M9.5 3.5h5v3.2a2 2 0 0 1-.9 1.7V12h-3.2V8.4a2 2 0 0 1-.9-1.7z"/><path pathLength="1" d="M5 12h14v4.2H5z"/><path pathLength="1" d="M4 20.5h16"/></svg></span>
+        <h3>Gestión notarial</h3>
+        
+      </article>
   </div>
 </div></section>
 
 <section class="apoyo" id="apoyo"><div class="wrap">
-  <p class="eyebrow" style="color:var(--oro-1)">Asesoría sin costo</p>
-  <div class="filete"></div>
-  <h2>Hay consultas por las que no cobramos</h2>
-  <p class="sub">No es una promoción ni tiene letra chica. Son casos en los que cobrar honorarios sería parte del problema.</p>
-  <div class="lista">
-    <div class="item"><b>Mujeres que viven violencia</b><span>La asesoría no genera honorarios.</span></div>
-    <div class="item"><b>Adultos mayores</b><span>Tampoco.</span></div>
-    <div class="item"><b>Escasos recursos</b><span>Se valora cada caso y se atiende.</span></div>
+  <div class="apoyo-cab">
+    <div data-r>
+      <p class="eyebrow" style="color:var(--oro-1)">Asesoría sin costo</p>
+      <div class="filete"></div>
+      <h2>Hay consultas por las que no cobramos</h2>
+      <p class="sub">No es una promoción ni tiene letra chica. Son casos en los que cobrar honorarios sería parte del problema.</p>
+    </div>
+    <figure class="ilus ilus-apoyo" data-r style="--d:120ms">
+      <picture>
+        <source type="image/webp" srcset="img/ilus-apoyo-600.webp 600w, img/ilus-apoyo-960.webp 960w" sizes="(min-width:900px) 420px, calc(100vw - 44px)">
+        <img src="img/ilus-apoyo-960.jpg" srcset="img/ilus-apoyo-600.jpg 600w, img/ilus-apoyo-960.jpg 960w" sizes="(min-width:900px) 420px, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="">
+      </picture>
+    </figure>
   </div>
-  <p class="cierre">Si estás en alguna de estas situaciones, escríbenos. Preguntar no cuesta nada y no te compromete a nada.</p>
+  <div class="lista">
+      <div class="item" data-r style="--d:0ms"><span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M12 3 5 6v5.5c0 4.4 3 7.9 7 9.5 4-1.6 7-5.1 7-9.5V6z"/><path pathLength="1" d="M9.2 12.2 11.2 14.2 15 10.2"/></svg></span><b>Mujeres que viven violencia</b><span>La asesoría no genera honorarios.</span></div>
+      <div class="item" data-r style="--d:90ms"><span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></span><b>Adultos mayores</b><span>Tampoco.</span></div>
+      <div class="item" data-r style="--d:180ms"><span class="ico-caja"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path pathLength="1" d="M3 13.5h3.5l3.2-1.3a2 2 0 0 1 1.5 0l3.8 1.4a1.4 1.4 0 0 1-.9 2.7l-3.1-.7"/><path pathLength="1" d="M6.5 13.5V20"/><path pathLength="1" d="M6.5 18.5l5 1.5 8-3.5a1.5 1.5 0 0 0-1.2-2.7l-4.3 1.6"/><path pathLength="1" d="M15.5 4.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/></svg></span><b>Escasos recursos</b><span>Se valora cada caso y se atiende.</span></div>
+  </div>
+  <p class="cierre" data-r>Si estás en alguna de estas situaciones, escríbenos. Preguntar no cuesta nada y no te compromete a nada.</p>
   <a class="btn btn-oro" style="margin-top:26px" href="#contacto">Escribir ahora</a>
 </div></section>
 
@@ -526,25 +618,25 @@ footer a:hover{color:#fff}
   <div class="filete"></div>
   <h2>Lo que dicen quienes ya pasaron por aquí</h2>
   <div class="razones">
-    <div class="razon">
+    <div class="razon" data-r>
       <h3>Nos recomiendan</h3>
       <p>La mayoría de quienes llegan vienen por recomendación de alguien a quien ya atendimos. Es como hemos crecido.</p>
     </div>
-    <div class="razon">
+    <div class="razon" data-r>
       <h3>Somos de Cadereyta</h3>
       <p>Vivimos aquí y crecimos aquí. El despacho está en el centro y saben dónde encontrarnos.</p>
     </div>
-    <div class="razon">
+    <div class="razon" data-r>
       <h3>Un despacho de mujeres</h3>
       <p>Muchas clientas nos buscan porque les resulta más fácil contar su situación a otra mujer. Y también nos buscan hombres, por lo mismo: se sienten escuchados.</p>
     </div>
-    <div class="razon">
+    <div class="razon" data-r>
       <h3>No dejamos casos a medias</h3>
       <p>Lo que empezamos lo terminamos. Y el costo que acordamos al principio es el que se respeta hasta el final.</p>
     </div>
   </div>
 
-  <div class="cita">
+  <div class="cita" data-r>
     <p>“Jamás prometemos que vas a ganar. Siempre hay que ser realistas: ponemos nuestro conocimiento, pero nunca prometemos lo que no sabemos que vaya a pasar.”</p>
     <p class="q">Las socias de TEMIS</p>
   </div>
@@ -556,7 +648,7 @@ footer a:hover{color:#fff}
     <div class="filete c"></div>
     <h2>Lo que nos preguntan siempre</h2>
   </div>
-  <div class="faq">
+  <div class="faq" data-r>
     <details open>
       <summary>¿Voy a ganar?</summary>
       <div class="r">No se lo prometemos a nadie, y desconfíe de quien se lo prometa. La decisión está en manos de un juez. Lo que sí le decimos desde la primera plática es qué tan sólido está su caso, qué puede probarse y qué no.</div>
@@ -632,7 +724,7 @@ footer a:hover{color:#fff}
       </div>
     </div>
 
-    <div class="ficha">
+    <div class="ficha" data-r>
       <h3 style="font-size:1.4rem">Escríbenos</h3>
       <p class="fina" style="margin-top:8px">Lo que nos cuentes es confidencial.</p>
       <form id="f" novalidate>
@@ -731,6 +823,18 @@ footer a:hover{color:#fff}
     err.hidden = true;
     ok.hidden = false;
   });
+
+  // aparición escalonada al bajar
+  var piezas = document.querySelectorAll('[data-r]');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+    }, {rootMargin: '0px 0px -8% 0px', threshold: 0.12});
+    piezas.forEach(function(el){ io.observe(el); });
+  } else {
+    piezas.forEach(function(el){ el.classList.add('vis'); });
+  }
+  window.__temisListo = true;
 
   // sombra suave en la barra al desplazarse
   var barra = document.getElementById('barra');

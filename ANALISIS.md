@@ -1,69 +1,60 @@
 # TEMIS Estudio Jurídico — estado de la página (10-nov-2026)
 
-Revisión de `index.html` (borrador v2) en la rama `fotos-sesion-nov`. Nada publicado.
+Rama `fotos-sesion-nov`, sin push ni merge. Nada publicado desde aquí.
 
 ## 0. Lo urgente: el borrador YA está en línea
 
-- `temisestudiojuridico.com` resuelve a GitHub Pages (A 185.199.108-111.153, `www` → CNAME `victorgomez-ibg.github.io`; NS de GoDaddy, dominio registrado el 19-oct-2026, vence el 19-oct-2027).
-- GitHub Pages está **activo** desde `main` (`status: built`, HTTPS aprobado hasta 17-ene-2027, `https_enforced: true`). `https://temisestudiojuridico.com` responde 200 y sirve el borrador v2 tal cual: barra «BORRADOR», recuadros rosas, bloques amarillos y un formulario que manda a WhatsApp con el **teléfono de REGUTT**.
-- Lo único que lo frena es `<meta name="robots" content="noindex,nofollow">`. Cualquiera que escriba el dominio lo ve.
-- El repo es **público**: si se sube esta rama, las fotos de Marisol quedan públicas en GitHub aunque no se fusione.
-- **Decisión para Víctor:** o se deja así sabiendo que es visible, o se despublica Pages hasta tener el OK (eso es un cambio en GitHub; no lo toqué).
+- `temisestudiojuridico.com` resuelve a GitHub Pages (A 185.199.108-111.153, `www` → `victorgomez-ibg.github.io`; DNS en GoDaddy; dominio del 19-oct-2026 al 19-oct-2027).
+- Pages publica desde `main` (`status: built`, HTTPS aprobado hasta 17-ene-2027). Hoy sirve el borrador v2 de `main` con la barra «BORRADOR» y el teléfono de REGUTT. Solo lo frena el `noindex`.
+- El repo es **público**: subir esta rama expone las fotos de Marisol aunque no se fusione.
+- **Decide Víctor:** dejarlo visible o despublicar Pages hasta el OK.
 
-## 1. Fotos
+## 1. Imágenes
 
-| Recuadro | Estado | Nota |
+| Lugar | Estado | Origen |
 |---|---|---|
-| Foto principal (grupo, 4:3) | Vacío | Pide a varias abogadas juntas. No hay foto de grupo de TEMIS. |
-| El despacho por dentro (4:5) | Vacío | Pide una consulta real. No la hay. |
-| Retrato · Jazmín (4:5) | Vacío | Jazmín **no** está identificada en la sesión. |
-| Retrato · Marisol (4:5) | **Puesto** | 6938 (traje blanco), recorte de media figura, ajuste cálido ligero. `img/marisol-{600,960}.{jpg,webp}` (13–66 KB). |
-| Fachada (3:2) | Vacío | Benito Juárez No. 8, de día, con el logo. |
+| Foto principal (grupo, 4:3) | Vacío | Falta foto real del equipo. **No se sustituye con IA.** |
+| El despacho por dentro (4:5) | Vacío | Falta escena real. **No se sustituye con IA.** |
+| Retrato · Marisol (4:5) — va primero | **Puesto** | Foto real 6938 de la sesión de nov. (traje blanco), media figura, ajuste cálido ligero. `img/marisol-*` |
+| Retrato · Jazmín (4:5) — va segunda | Vacío | Jazmín no está identificada en la sesión. **No se sustituye con IA.** |
+| Fachada (3:2) | Vacío | Benito Juárez No. 8. **No se sustituye con IA.** |
+| Servicios (ilustración 3:2) | Puesto | **GENERADA CON IA** (Gemini `gemini-3-pro-image`, 10-nov): balanza, libreta y rosas secas. Sin personas ni texto. `img/ilus-servicios-*` |
+| Asesoría sin costo (ilustración) | Puesta | **GENERADA CON IA** (Gemini `gemini-3-pro-image`, 10-nov): mesa con dos tazas, flores y carpeta junto a la ventana. Sin personas ni texto. `img/ilus-apoyo-*` |
+| Imagen para compartir (`og-temis.jpg`, 1200×630) | Puesta | Hecha con el sello del logo y la tipografía (Cormorant/Jost, OFL). Sin personas. |
 
-- Cuando llegue el retrato de Jazmín, debe igualar el de Marisol (fondo liso claro, media figura, de frente). Si Jazmín no puede hacer sesión igual, hay que decidir si se rehace el de Marisol para que la pareja combine.
-- Alternativas de Marisol listas si no gusta la 6938: 6926 (mano en el mentón, más cercana), 6916 o 6934 (cuerpo entero, habría que recortar más).
+- Las dos ilustraciones de IA llevan `alt=""` (decorativas) y no representan el despacho real. Si TEMIS prefiere no usar IA, se cambian por fotos propias en el mismo formato.
+- El retrato de Jazmín debe igualar el de Marisol (fondo liso claro, media figura, de frente).
+- Alternativas de Marisol: 6926 (mano en el mentón), 6916 o 6934 (cuerpo entero, más recorte).
 
 ## 2. Por confirmar (texto)
 
-- Grado de Marisol: la página dice «Mtra.»; el 22-oct Víctor dijo «Lic. en Derecho», el 10-nov «Mtra.». Falta decidir.
-- Nombres de las otras tres abogadas titulares y de las cuatro pasantes; si se publican cédulas.
-- Teléfono: es el mismo de REGUTT (441 130 4944). ¿TEMIS tiene línea propia?
-- Horario y correo (el Facebook dice «siempre abierto»).
-- «Desde 2017» y «en 2019 le dimos formalidad»: de dónde sale el dato (no verificado aquí).
-- Aviso de privacidad, razón social y responsable de datos: **sin esto no debe recibir datos de clientes** (el propio pie lo dice).
-- Las zonas (Ezequiel Montes, San Juan del Río, San Joaquín, Querétaro) y «llevamos juicios en la capital»: confirmar con las socias.
+- Grado de Marisol: la página dice «Mtra.»; el 22-oct se confirmó «Lic. en Derecho», el 10-nov «Mtra.».
+- Nombres de las otras tres titulares y las cuatro pasantes; cédulas.
+- Teléfono (es el de REGUTT: 441 130 4944), horario y correo.
+- «Desde 2017» y «2019»: origen del dato no verificado (por eso no está en el JSON-LD).
+- Zonas de atención y «llevamos juicios en la capital».
+- Aviso de privacidad, razón social y responsable de datos: **sin esto el formulario no debe recibir datos de clientes**.
 
-## 3. Problemas técnicos
+## 3. Arreglado en esta rama
 
-- **Encabezado en móvil (375 px):** «ESTUDIO JURÍDICO» y el botón «Consulta tu caso» se parten en dos líneas; la barra fija crece a ~90 px. Arreglo: ocultar el subtítulo bajo 420 px o acortar el botón a «Consulta».
-- **Menú en móvil:** `nav` se oculta por debajo de 900 px y no hay menú alternativo. Solo queda el botón de contacto. Aceptable para una página corta; valorar un menú simple.
-- **Formulario:** el mensaje «Se abrió WhatsApp con tu mensaje escrito» se muestra al hacer clic aunque WhatsApp no se abra (en escritorio sin WhatsApp no pasa nada). Cambiar a «Te llevamos a WhatsApp…» o comprobarlo. El error no tiene `aria-live`. No valida que el teléfono tenga 10 dígitos.
-- **Imágenes sin usar:** `img/logo.jpg`, `img/temis-logo.jpg` (en el repo) y `img/sello.png` (217 KB, sin commitear, tampoco lo commiteé) no se usan. El favicon es `sello.jpg` (760×640, 43 KB): conviene un `favicon.png` 32/180 px.
-- **Fuentes:** Google Fonts por red externa (Cormorant y Jost). Para rendimiento y privacidad, alojarlas en el repo.
-- Sin `custom_404`, sin `robots.txt` ni `sitemap.xml` (404).
+- **Encabezado móvil:** «Estudio Jurídico» y «Consulta tu caso» en una sola línea a 320, 375 y 1440 px (medido con rangos de texto).
+- **Contraste AA:** `--oro-txt` #866020 para dorados pequeños (≥4.66:1 incluso sobre rosa-2), `--tinta-3` #6f635c (≥5.4:1), botón oro con texto tinta sobre un degradado más claro (≥4.77:1 en todo el degradado), `.oro-txt` grande con degradado oscuro (≥3.2:1).
+- **Formulario:** ya no afirma que WhatsApp se abrió. Dice «Te llevamos a WhatsApp con tu mensaje listo… Si no se abrió, toca aquí» con el mismo enlace wa.me. Valida nombre y 10 dígitos, errores con `role="alert"`, aviso con `role="status"`.
+- **SEO:** canonical, Open Graph y Twitter (`summary_large_image`), JSON-LD `LegalService` solo con datos de la página (nombre, dirección, zonas, áreas, socias; sin teléfono, horario, correo ni año), `robots.txt` (permite rastrear para que Google lea el noindex) y `sitemap.xml`. **El `noindex` sigue mientras sea borrador**; al publicar se quita junto con la barra `.draft`.
+- **Servicios:** siete áreas con íconos SVG de línea propios (familia, civil, administrativo, agrario, laboral, contratos, gestión notarial). Familia como tarjeta principal. Solo los textos que ya estaban.
+- **Asesoría sin costo:** íconos propios por caso e ilustración.
+- **Movimiento** (solo transform/opacity, 300–700 ms, ease-out): aparición escalonada al bajar (IntersectionObserver), entrada del hero, elevación y dibujo de íconos al pasar el cursor, cabecera que se compacta al bajar, subrayado del menú, pulso discreto del botón de WhatsApp. Con `prefers-reduced-motion` no se anima nada. Sin JS o si el script no arranca en 2.5 s, todo queda visible (probado).
+- **Orden de socias:** Marisol primero y Jazmín después (tarjetas y JSON-LD).
+- Pulido: «Saltar al contenido», `<main>`, sello transparente en la portada, favicon y apple-touch-icon.
 
-## 4. SEO (para cuando se publique)
+## 4. Pendiente técnico
 
-- Quitar `noindex`.
-- Falta `link rel="canonical"`, etiquetas Open Graph (`og:title`, `og:image`… hoy compartir el enlace en WhatsApp sale sin imagen) y JSON-LD `LegalService` con dirección, teléfono y horario (cuando estén confirmados).
-- Título y descripción están bien orientados («Abogadas en Cadereyta de Montes»).
-- Alta en Google Business Profile con la misma dirección y teléfono que la página.
+- Menú en móvil: por debajo de 900 px solo queda el botón de contacto.
+- Fuentes por Google Fonts (externas). Para privacidad y velocidad, alojarlas en el repo.
+- Sin página 404 propia.
+- Imágenes del repo sin usar: `img/logo.jpg`, `img/temis-logo.jpg`. `img/sello.png` (217 KB) sigue sin commitear; de él salen `sello-hero.png` y los íconos.
+- Al publicar: alta en Google Business Profile con los mismos datos.
 
-## 5. Accesibilidad (WCAG 2.1 AA)
+## 5. Cómo se probó
 
-| Elemento | Contraste | Pasa |
-|---|---|---|
-| Texto cuerpo `--tinta-2` sobre blanco | 7.78 | Sí |
-| Eyebrows `--oro-3` (#a9792c, 11 px mayúsculas) sobre blanco | 3.85 | **No** (texto pequeño pide 4.5) |
-| `--tinta-3` (#8a7d75) sobre blanco / rosa-1 | 3.98 / 3.68 | **No** (micro, dt, etiquetas del formulario) |
-| Texto blanco del botón oro sobre el degradado | 1.35–3.24 | **No** (las zonas claras del degradado) |
-| Bloques amarillos `.pendiente` | 6.79 | Sí |
-
-- Arreglo sugerido: `--oro-3` → `--oro-4` (#7d5a1f, 6.26) en textos pequeños; oscurecer `--tinta-3` a ~#736760; texto del botón oro en `--tinta` o degradado más oscuro.
-- Bien: `lang="es"`, foco visible, etiquetas envolviendo los campos, `alt` en el retrato nuevo, `prefers-reduced-motion`, objetivos táctiles de 48 px.
-- Pendiente: no hay `<main>`; el aviso de borrador va antes del encabezado (se quita al publicar).
-
-## 6. Probado
-
-- Servidor local (`python3 -m http.server`) + Chrome headless (Puppeteer): 375 px (DPR 2) y 1440 px.
-- Sin scroll horizontal en ninguno (`scrollWidth` = ancho de ventana), 0 peticiones fallidas, todas las imágenes cargan. En móvil se sirve `marisol-960.webp`, en escritorio `marisol-600.webp`.
+Servidor local + Chrome headless (Puppeteer, perfil temporal), a 320, 375 y 1440 px: sin scroll horizontal, 0 peticiones fallidas, 0 imágenes rotas tras la carga diferida, las 24 piezas con aparición se muestran, el formulario valida y abre wa.me en otra pestaña, y la página se ve completa sin JS y con movimiento reducido.

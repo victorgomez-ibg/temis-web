@@ -270,7 +270,15 @@ footer a{color:var(--oro-1)}
 .miembro .cuerpo{padding:20px 22px 22px}
 .miembro h3{font-size:1.3rem;font-weight:600}
 .miembro .rol{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--oro-txt);margin-top:7px}
-@media (min-width:600px){.equipo{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:600px){.equipo{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.equipo{grid-template-columns:repeat(4,1fr)}}
+.sub-miembro{font-size:.82rem;color:var(--tinta-2);margin-top:8px;line-height:1.45}
+.bio{margin-top:12px;border-top:1px solid var(--linea);padding-top:10px}
+.bio summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--oro-txt);min-height:32px}
+.bio summary::-webkit-details-marker{display:none}
+.bio summary::after{content:"";width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .25s}
+.bio[open] summary::after{transform:rotate(225deg) translateY(-2px)}
+.bio p{font-size:.88rem;color:var(--tinta-2);line-height:1.55;margin-top:6px}
 
 /* dónde atendemos */
 .donde{position:relative;overflow:hidden;padding:34px 30px;background:linear-gradient(150deg,#fff 0%,#fff 50%,var(--rosa-1) 100%)}
@@ -453,7 +461,7 @@ footer a:hover{color:#fff}
   <figure class="hero-foto">
       <picture>
         <source type="image/webp" srcset="img/foto-grupo-800.webp 800w, img/foto-grupo-1028.webp 1028w" sizes="(min-width:1180px) 540px, (min-width:900px) 46vw, calc(100vw - 44px)">
-        <img src="img/foto-grupo-1028.jpg" srcset="img/foto-grupo-800.jpg 800w, img/foto-grupo-1028.jpg 1028w" sizes="(min-width:1180px) 540px, (min-width:900px) 46vw, calc(100vw - 44px)" width="1028" height="771" fetchpriority="high" decoding="async" alt="Seis integrantes de TEMIS juntas en el estudio fotográfico: dos sentadas al frente, de rojo, y cuatro de pie detrás, de negro">
+        <img src="img/foto-grupo-1028.jpg" srcset="img/foto-grupo-800.jpg 800w, img/foto-grupo-1028.jpg 1028w" sizes="(min-width:1180px) 540px, (min-width:900px) 46vw, calc(100vw - 44px)" width="1028" height="771" fetchpriority="high" decoding="async" alt="Seis integrantes de TEMIS: de pie, Olivia Trejo, María de Lourdes Gonzales, Ana Karen Maqueda y Katie Reséndiz; sentadas al frente, de rojo, las socias Marisol Alvarado y Jazmín Balbuena">
       </picture>
   </figure>
 </div></header>
@@ -536,8 +544,8 @@ footer a:hover{color:#fff}
     <article class="miembro" data-r>
       <figure class="retrato">
         <picture>
-        <source type="image/webp" srcset="img/equipo-katie-600.webp 600w, img/equipo-katie-960.webp 960w" sizes="(min-width:900px) 360px, (min-width:600px) 30vw, calc(100vw - 44px)">
-        <img src="img/equipo-katie-960.jpg" srcset="img/equipo-katie-600.jpg 600w, img/equipo-katie-960.jpg 960w" sizes="(min-width:900px) 360px, (min-width:600px) 30vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Lic. Katie Reséndiz González">
+        <source type="image/webp" srcset="img/equipo-katie-600.webp 600w, img/equipo-katie-960.webp 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)">
+        <img src="img/equipo-katie-960.jpg" srcset="img/equipo-katie-600.jpg 600w, img/equipo-katie-960.jpg 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Lic. Katie Reséndiz González">
       </picture>
       </figure>
       <div class="cuerpo">
@@ -548,8 +556,8 @@ footer a:hover{color:#fff}
     <article class="miembro" data-r>
       <figure class="retrato">
         <picture>
-        <source type="image/webp" srcset="img/equipo-anakaren-600.webp 600w, img/equipo-anakaren-960.webp 960w" sizes="(min-width:900px) 360px, (min-width:600px) 30vw, calc(100vw - 44px)">
-        <img src="img/equipo-anakaren-960.jpg" srcset="img/equipo-anakaren-600.jpg 600w, img/equipo-anakaren-960.jpg 960w" sizes="(min-width:900px) 360px, (min-width:600px) 30vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Lic. Ana Karen Maqueda García">
+        <source type="image/webp" srcset="img/equipo-anakaren-600.webp 600w, img/equipo-anakaren-960.webp 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)">
+        <img src="img/equipo-anakaren-960.jpg" srcset="img/equipo-anakaren-600.jpg 600w, img/equipo-anakaren-960.jpg 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Lic. Ana Karen Maqueda García">
       </picture>
       </figure>
       <div class="cuerpo">
@@ -560,13 +568,30 @@ footer a:hover{color:#fff}
     <article class="miembro" data-r>
       <figure class="retrato">
         <picture>
-        <source type="image/webp" srcset="img/equipo-olivia-600.webp 600w, img/equipo-olivia-960.webp 960w" sizes="(min-width:900px) 360px, (min-width:600px) 30vw, calc(100vw - 44px)">
-        <img src="img/equipo-olivia-960.jpg" srcset="img/equipo-olivia-600.jpg 600w, img/equipo-olivia-960.jpg 960w" sizes="(min-width:900px) 360px, (min-width:600px) 30vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Olivia Denisse Trejo Hernández">
+        <source type="image/webp" srcset="img/equipo-olivia-600.webp 600w, img/equipo-olivia-960.webp 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)">
+        <img src="img/equipo-olivia-960.jpg" srcset="img/equipo-olivia-600.jpg 600w, img/equipo-olivia-960.jpg 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Olivia Denisse Trejo Hernández">
       </picture>
       </figure>
       <div class="cuerpo">
         <h3>Olivia Denisse Trejo Hernández</h3>
         <p class="rol">Colaboradora</p>
+      </div>
+    </article>
+    <article class="miembro" data-r>
+      <figure class="retrato">
+        <picture>
+        <source type="image/webp" srcset="img/equipo-lourdes-600.webp 600w, img/equipo-lourdes-960.webp 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)">
+        <img src="img/equipo-lourdes-960.jpg" srcset="img/equipo-lourdes-600.jpg 600w, img/equipo-lourdes-960.jpg 960w" sizes="(min-width:1100px) 280px, (min-width:600px) 45vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="María de Lourdes Gonzales Ordaz">
+      </picture>
+      </figure>
+      <div class="cuerpo">
+        <h3>María de Lourdes Gonzales Ordaz</h3>
+        <p class="rol">Colaboradora</p>
+        <p class="sub-miembro">Pasante de Derecho · Universidad del Centro del Bajío</p>
+        <details class="bio">
+          <summary>Experiencia</summary>
+          <p>Seis años en el área mercantil y en gestión integral: trámites ante AFORE, IMSS, IMPI, CONDUSEF y PROFECO, gestión inmobiliaria y notarial, y atención personalizada en trámites administrativos, legales y comerciales.</p>
+        </details>
       </div>
     </article>
   </div>
@@ -748,7 +773,7 @@ footer a:hover{color:#fff}
       <figure class="ilus foto-contacto" data-r>
         <picture>
         <source type="image/webp" srcset="img/foto-contacto-800.webp 800w, img/foto-contacto-1200.webp 1200w" sizes="(min-width:1180px) 540px, (min-width:900px) 46vw, calc(100vw - 44px)">
-        <img src="img/foto-contacto-1200.jpg" srcset="img/foto-contacto-800.jpg 800w, img/foto-contacto-1200.jpg 1200w" sizes="(min-width:1180px) 540px, (min-width:900px) 46vw, calc(100vw - 44px)" width="1200" height="900" loading="lazy" decoding="async" alt="Dos integrantes de TEMIS sonriendo, con los brazos cruzados">
+        <img src="img/foto-contacto-1200.jpg" srcset="img/foto-contacto-800.jpg 800w, img/foto-contacto-1200.jpg 1200w" sizes="(min-width:1180px) 540px, (min-width:900px) 46vw, calc(100vw - 44px)" width="1200" height="900" loading="lazy" decoding="async" alt="Olivia Trejo y María de Lourdes Gonzales, de TEMIS, sonriendo con los brazos cruzados">
       </picture>
       </figure>
 

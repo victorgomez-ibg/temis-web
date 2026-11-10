@@ -32,12 +32,13 @@ Criterio (Víctor, 10-nov): las mujeres de la sesión de fotos también son de T
 
 | Lugar | Foto | Notas |
 |---|---|---|
-| Foto principal (4:3) | Seleccion-34, recortada a la derecha | Seis mujeres: Olivia (B), C, Marisol (A), Ana Karen Maqueda (D), Jazmín (G) y Katie (E). El hombre del extremo derecho queda fuera del recorte sin dejar ninguna parte de él. Alt sin nombres. |
+| Foto principal (4:3) | Seleccion-34, recortada a la derecha | Seis mujeres: Olivia (B), María de Lourdes (C), Marisol (A), Ana Karen Maqueda (D), Jazmín (G) y Katie (E). El hombre del extremo derecho queda fuera del recorte sin dejar ninguna parte de él. Alt sin nombres. |
 | Socias · Marisol (4:5), primero | 6938 (traje blanco) | Media figura. |
 | Socias · Jazmín (4:5), segunda | Seleccion-44, **original del fotógrafo** (3648×5472, `_insumos/`, fuera del repo) | La eligió ella. Media figura, mismo ajuste cálido que Marisol; exportada a 640/960 px (WebP + JPG). |
 | Colaboradoras · Lic. Katie Reséndiz González | Seleccion-24 | Colaboradora (confirmado por Víctor, 10-nov). |
 | Colaboradoras · Lic. Ana Karen Maqueda García | Seleccion-22 | Colaboradora (confirmado por Víctor, 10-nov). |
 | Colaboradoras · Olivia Denisse Trejo Hernández | Seleccion-16 | Colaboradora (confirmado por Víctor, 10-nov). |
+| Colaboradoras · María de Lourdes Gonzales Ordaz («C») | Seleccion-10, **original del fotógrafo** (3473 px, `_insumos/`, fuera del repo) | Colaboradora; «Pasante de Derecho · Universidad del Centro del Bajío»; experiencia en desplegable (texto de ella, condensado). Apellido «Gonzales» como ella lo escribe. Nombrada también en el alt de Seleccion-34 y Seleccion-41. |
 | Asesoría sin costo (4:5) | Seleccion-56, **original del fotógrafo** (3648×5472, `_insumos/`, fuera del repo) | Las dos socias juntas: Marisol de pie (vestido rojo) y Jazmín sentada (traje rojo); el texto alternativo las nombra. Exportada a 640/960/1280 px. Sustituye a Seleccion-57 y a la ilustración de IA. |
 | Contacto (4:3) | Seleccion-41 | Olivia y C, sonrientes. Alt sin nombres. |
 | Servicios (3:2) | **GENERADA CON IA** (Gemini `gemini-3-pro-image`, 10-nov) | Balanza, libreta y rosas secas, sin personas ni texto. |

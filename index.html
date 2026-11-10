@@ -118,6 +118,9 @@ h3{font-size:1.3rem;font-weight:600}
 .foto.r45{aspect-ratio:4/5}
 .foto.r11{aspect-ratio:1/1}
 .foto.r169{aspect-ratio:16/9}
+/* foto ya colocada: mismo 4:5 que el recuadro al que sustituye */
+.retrato{aspect-ratio:4/5;overflow:hidden;background:var(--rosa-1);border-bottom:1px solid var(--linea)}
+.retrato img{width:100%;height:100%;object-fit:cover;object-position:center top}
 
 /* ---------- franja ---------- */
 .franja{background:var(--tinta);color:#f4ece4;position:relative;overflow:hidden}
@@ -338,13 +341,11 @@ footer a{color:var(--oro-1)}
     </article>
 
     <article class="socia">
-      <figure class="foto r45" style="border:0;border-radius:0;border-bottom:1px solid var(--linea)">
-        <div>
-          <div class="ic">◉</div>
-          <div class="t">Retrato · Marisol</div>
-          <div class="d">Mismo encuadre, misma luz y mismo fondo que el de Jazmín, para que la pareja de retratos se vea de la misma sesión.</div>
-          <div class="m">Vertical 4:5 · mismo encuadre que el de Jazmín</div>
-        </div>
+      <figure class="retrato">
+        <picture>
+          <source type="image/webp" srcset="img/marisol-600.webp 600w, img/marisol-960.webp 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)">
+          <img src="img/marisol-960.jpg" srcset="img/marisol-600.jpg 600w, img/marisol-960.jpg 960w" sizes="(min-width:1180px) 560px, (min-width:900px) 46vw, calc(100vw - 44px)" width="960" height="1200" loading="lazy" decoding="async" alt="Marisol Alvarado Ángeles, socia fundadora de TEMIS, con traje blanco sobre fondo claro">
+        </picture>
       </figure>
       <div class="cuerpo">
         <h3>Mtra. Marisol Alvarado Ángeles</h3>

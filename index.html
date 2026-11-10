@@ -11,9 +11,6 @@ setTimeout(function(){ if(!window.__temisListo) document.documentElement.classLi
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>TEMIS Estudio Jurídico — Abogadas en Cadereyta de Montes</title>
 <meta name="description" content="Despacho de abogadas en Cadereyta de Montes, Querétaro. Derecho familiar, civil, administrativo, agrario y laboral. Asesoría sin costo para mujeres que viven violencia, adultos mayores y personas de escasos recursos.">
-<!-- BORRADOR: el noindex se queda hasta el OK de publicación. Al publicar: quitar esta línea
-     y la barra .draft. robots.txt ya permite rastrear (para que Google lea este noindex). -->
-<meta name="robots" content="noindex,nofollow">
 <link rel="canonical" href="https://temisestudiojuridico.com/">
 <meta name="theme-color" content="#ffffff">
 <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
@@ -34,8 +31,6 @@ setTimeout(function(){ if(!window.__temisListo) document.documentElement.classLi
 <meta name="twitter:description" content="Despacho de abogadas en Cadereyta de Montes, Querétaro. Familiar, civil, administrativo, agrario y laboral.">
 <meta name="twitter:image" content="https://temisestudiojuridico.com/img/og-temis.jpg">
 
-<!-- Solo datos que ya están en la página. Sin teléfono (es el de REGUTT, por confirmar),
-     sin horario ni correo (por confirmar) y sin año de fundación (no verificado). -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -43,6 +38,7 @@ setTimeout(function(){ if(!window.__temisListo) document.documentElement.classLi
   "@id": "https://temisestudiojuridico.com/#despacho",
   "name": "TEMIS Estudio Jurídico",
   "url": "https://temisestudiojuridico.com/",
+  "telephone": "+52 441 130 4944",
   "logo": "https://temisestudiojuridico.com/img/apple-touch-icon.png",
   "image": "https://temisestudiojuridico.com/img/og-temis.jpg",
   "description": "Despacho de abogadas en Cadereyta de Montes, Querétaro. Derecho familiar, civil, administrativo, agrario y laboral, contratos y gestión notarial.",
@@ -122,10 +118,6 @@ h3{font-size:1.3rem;font-weight:600}
 .filete.c{margin-inline:auto}
 .centro{text-align:center}
 
-/* ---------- aviso de borrador ---------- */
-.draft{background:var(--tinta);color:var(--oro-1);font-size:.78rem;text-align:center;padding:9px 18px;line-height:1.5;letter-spacing:.02em}
-.draft b{color:#fff}
-
 /* ---------- barra ---------- */
 .bar{position:sticky;top:0;z-index:50;transition:box-shadow .3s;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.6) blur(14px);border-bottom:1px solid var(--linea)}
 .bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:11px}
@@ -162,23 +154,7 @@ h3{font-size:1.3rem;font-weight:600}
 .hero .micro span{display:flex;align-items:center;gap:7px}
 .hero .micro span::before{content:"";width:5px;height:5px;background:var(--oro-2);transform:rotate(45deg)}
 
-/* ---------- marcos de foto ---------- */
-.foto{
-  position:relative;border-radius:var(--r);overflow:hidden;background:
-    repeating-linear-gradient(135deg,var(--rosa-1),var(--rosa-1) 14px,var(--rosa-2) 14px,var(--rosa-2) 28px);
-  border:1px solid var(--rosa-3);display:grid;place-items:center;text-align:center;padding:26px;
-}
-.foto::before{content:"";position:absolute;inset:9px;border:1px dashed var(--oro-2);border-radius:calc(var(--r) - 7px);opacity:.55;pointer-events:none}
-.foto .ic{font-size:1.6rem;color:var(--oro-3);margin-bottom:10px}
-.foto .t{font-family:var(--fb);font-size:.66rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--oro-4)}
-.foto .d{font-size:.88rem;color:var(--tinta-2);margin-top:9px;max-width:30ch;line-height:1.5}
-.foto .m{font-size:.72rem;color:var(--tinta-3);margin-top:10px;letter-spacing:.04em}
-.foto.r43{aspect-ratio:4/3}
-.foto.r32{aspect-ratio:3/2}
-.foto.r45{aspect-ratio:4/5}
-.foto.r11{aspect-ratio:1/1}
-.foto.r169{aspect-ratio:16/9}
-/* foto ya colocada: mismo 4:5 que el recuadro al que sustituye */
+/* retratos 4:5 */
 .retrato{aspect-ratio:4/5;overflow:hidden;background:var(--rosa-1);border-bottom:1px solid var(--linea)}
 .retrato img{width:100%;height:100%;object-fit:cover;object-position:center top}
 
@@ -266,10 +242,6 @@ input:focus,select:focus,textarea:focus{border-color:var(--oro-2);outline:none;b
 .fina{font-size:.8rem;color:var(--tinta-3);line-height:1.55;font-weight:300;text-transform:none;letter-spacing:0}
 .ok{border-left:3px solid var(--verde);background:var(--rosa-1);padding:14px 16px;font-size:.92rem}
 
-/* pendientes */
-.pendiente{background:linear-gradient(135deg,#fffaf0,#fdf3e3);border:1px dashed var(--oro-2);border-radius:14px;padding:16px 18px;font-size:.87rem;color:#6d5520;margin-top:22px;font-weight:400}
-.pendiente b{color:#8a6a1f}
-
 footer{background:var(--tinta);color:#cbbfb7}
 footer .wrap{padding-block:54px 40px;display:grid;gap:18px;font-size:.88rem;font-weight:300}
 footer .top{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
@@ -299,6 +271,13 @@ footer a{color:var(--oro-1)}
 .miembro h3{font-size:1.3rem;font-weight:600}
 .miembro .rol{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--oro-txt);margin-top:7px}
 @media (min-width:600px){.equipo{grid-template-columns:repeat(3,1fr)}}
+
+/* dónde atendemos */
+.donde{position:relative;overflow:hidden;padding:34px 30px;background:linear-gradient(150deg,#fff 0%,#fff 50%,var(--rosa-1) 100%)}
+.donde-sello{position:absolute;right:-30px;bottom:-24px;width:190px;opacity:.16;pointer-events:none}
+.donde-dir{font-family:var(--fd);font-size:1.55rem;line-height:1.3;margin-top:14px;color:var(--tinta)}
+.donde-dir b{font-weight:600}
+.donde-acc{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;position:relative}
 
 /* ---------- servicios: áreas con ícono ---------- */
 .serv-cab{display:grid;gap:30px;align-items:center}
@@ -434,8 +413,6 @@ footer a:hover{color:#fff}
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
-
-<div class="draft"><b>BORRADOR</b> — los recuadros rosas marcan dónde van las fotos de la sesión y qué debe salir en cada una. Lo amarillo falta por confirmar.</div>
 
 <div class="bar" id="barra"><div class="wrap">
   <a class="marca" href="#inicio">
@@ -594,9 +571,6 @@ footer a:hover{color:#fff}
     </article>
   </div>
 
-  <div class="pendiente">
-    <b>Falta por confirmar:</b> quiénes completan las cinco abogadas titulares y las cuatro pasantes, y si quieren publicar sus cédulas profesionales.
-  </div>
 </div></section>
 
 <section class="rosa" id="servicios"><div class="wrap">
@@ -751,14 +725,15 @@ footer a:hover{color:#fff}
       </div>
       <p style="margin-top:22px;color:var(--tinta-2);font-weight:300">El despacho está en el centro de Cadereyta y también llevamos juicios en la capital del estado.</p>
     </div>
-    <figure class="foto r32">
-      <div>
-        <div class="ic">◉</div>
-        <div class="t">Fachada</div>
-        <div class="d">La entrada del despacho en Benito Juárez No. 8, con el logo visible. De día, de frente. Es la foto que le dice al cliente que el despacho existe y dónde está.</div>
-        <div class="m">Horizontal 3:2 · mínimo 1400 px de ancho</div>
+    <div class="ficha donde" data-r>
+      <img class="donde-sello" src="img/sello-hero.png" width="380" height="320" alt="" loading="lazy">
+      <p class="eyebrow">El despacho</p>
+      <p class="donde-dir"><b>Benito Juárez No. 8</b>, Col. Centro<br>Cadereyta de Montes, Qro., C.P. 76500</p>
+      <div class="donde-acc">
+        <a class="btn btn-oro" href="https://www.google.com/maps/search/?api=1&amp;query=Benito+Ju%C3%A1rez+8%2C+Centro%2C+Cadereyta+de+Montes%2C+Qro.+76500" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn btn-linea" href="tel:+524411304944">441 130 4944</a>
       </div>
-    </figure>
+    </div>
   </div>
 </div></section>
 
@@ -782,16 +757,8 @@ footer a:hover{color:#fff}
           <dt>Dirección</dt>
           <dd><b>Benito Juárez No. 8</b>, Col. Centro<br>Cadereyta de Montes, Qro., C.P. 76500</dd>
           <dt>Teléfono y WhatsApp</dt>
-          <dd><a href="#contacto">441 130 4944</a></dd>
-          <dt>Horario</dt>
-          <dd>Por confirmar</dd>
-          <dt>Correo</dt>
-          <dd>Por confirmar</dd>
+          <dd><a href="https://wa.me/524411304944" target="_blank" rel="noopener">441 130 4944</a></dd>
         </dl>
-      </div>
-
-      <div class="pendiente">
-        <b>Falta por confirmar:</b> el teléfono publicado es el mismo de REGUTT S.C.; hay que decidir si TEMIS usa línea propia. También el horario real —el Facebook dice «siempre abierto»— y el correo con el dominio nuevo.
       </div>
     </div>
 
@@ -824,7 +791,7 @@ footer a:hover{color:#fff}
         <p id="error" class="fina" style="color:var(--rojo);font-weight:600" role="alert" hidden>Escribe tu nombre y tu WhatsApp para continuar.</p>
         <a class="btn btn-oro" id="enviar" href="#" target="_blank" rel="noopener" style="width:100%">Enviar por WhatsApp</a>
         <p id="ok" class="ok" role="status" hidden>Te llevamos a WhatsApp con tu mensaje listo; solo falta que lo envíes ahí. Si no se abrió, <a id="ok-wa" href="#" target="_blank" rel="noopener">toca aquí para abrir WhatsApp</a>.</p>
-        <p class="fina">Tus datos se usan únicamente para responderte. No se guardan en esta página ni se envían a ningún otro servicio.</p>
+        <p class="fina">Tus datos solo se usan para responderte; no se almacenan en esta página.</p>
       </form>
     </div>
   </div>
@@ -842,8 +809,6 @@ footer a:hover{color:#fff}
     </div>
   </div>
   <p class="legal">
-    <b style="color:var(--oro-1)">PENDIENTE ANTES DE PUBLICAR:</b> razón social del responsable, aviso de privacidad con domicilio y correo para el ejercicio de derechos ARCO, y nombre de la persona responsable de datos personales dentro del despacho. Sin esos datos esta página no debe recibir información de clientes.
-    <br><br>
     La información de este sitio es orientativa y de carácter general. No constituye asesoría jurídica sobre un caso particular ni garantiza resultado alguno: cada asunto depende de sus propios hechos y pruebas.
   </p>
 </div></footer>
@@ -851,7 +816,7 @@ footer a:hover{color:#fff}
 <script>
 (function(){
   "use strict";
-  // Número que recibe los mensajes. PENDIENTE: confirmar si TEMIS usa línea propia.
+  // Número que recibe los mensajes de WhatsApp.
   var WA = "524411304944";
 
   var f = document.getElementById('f');

@@ -1,4 +1,4 @@
-# TEMIS Estudio Jurídico — estado de la página (10-nov-2026)
+# TEMIS Estudio Jurídico — estado de la página (10-nov-2026, versión de entrega)
 
 Rama `fotos-sesion-nov`, sin push ni merge. Nada publicado desde aquí.
 
@@ -8,6 +8,23 @@ Rama `fotos-sesion-nov`, sin push ni merge. Nada publicado desde aquí.
 - Pages publica desde `main` (`status: built`, HTTPS aprobado hasta 17-ene-2027). Hoy sirve el borrador v2 de `main` con la barra «BORRADOR» y el teléfono de REGUTT. Solo lo frena el `noindex`.
 - El repo es **público**: subir esta rama expone las fotos de Marisol aunque no se fusione.
 - **Decide Víctor:** dejarlo visible o despublicar Pages hasta el OK.
+
+## 0.1 Versión de entrega (10-nov): qué se quitó, para reponerlo cuando se confirme
+
+Regla de Víctor: lo no confirmado no se muestra marcado; se quita o se generaliza. Se quitó:
+
+- La barra «BORRADOR» y sus estilos (`.draft`).
+- Todos los recuadros rosas de guía (`.foto`) y sus estilos. El único que seguía vacío era **Fachada** (Benito Juárez No. 8, horizontal 3:2, ≥1400 px). En su lugar, «Dónde atendemos» muestra una tarjeta con la dirección, «Cómo llegar» (Google Maps) y el teléfono.
+- Todos los bloques amarillos (`.pendiente`):
+  - Equipo: «quiénes completan las cinco abogadas titulares y las cuatro pasantes, y si quieren publicar sus cédulas».
+  - Contacto: «el teléfono es el mismo de REGUTT S.C.; decidir si TEMIS usa línea propia; horario real (el Facebook dice "siempre abierto"); correo con el dominio nuevo».
+- En contacto, las filas **Horario** y **Correo** («Por confirmar»). Se reponen en la `<dl>` de la ficha y en el JSON-LD (`openingHours`, `email`).
+- En el pie, el bloque «PENDIENTE ANTES DE PUBLICAR»: razón social del responsable, aviso de privacidad con domicilio y correo para derechos ARCO, y responsable de datos personales. **Sigue siendo necesario legalmente** antes de recibir datos de clientes por el formulario; conviene reponerlo como página de aviso de privacidad.
+- La línea del formulario pasó a: «Tus datos solo se usan para responderte; no se almacenan en esta página».
+- La meta `noindex`. El SEO queda para producción: canonical, Open Graph y JSON-LD con dirección y teléfono (+52 441 130 4944); sin horario ni correo.
+- Comentarios internos de «por confirmar» en el HTML y el JS.
+
+Sigue sin publicarse: nada de esto llega al dominio hasta que Víctor fusione con `main`.
 
 ## 1. Imágenes
 

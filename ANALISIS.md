@@ -45,6 +45,7 @@ Rama `fotos-sesion-nov`, sin push ni merge. Nada publicado desde aquí.
 - **Asesoría sin costo:** íconos propios por caso e ilustración.
 - **Movimiento** (solo transform/opacity, 300–700 ms, ease-out): aparición escalonada al bajar (IntersectionObserver), entrada del hero, elevación y dibujo de íconos al pasar el cursor, cabecera que se compacta al bajar, subrayado del menú, pulso discreto del botón de WhatsApp. Con `prefers-reduced-motion` no se anima nada. Sin JS o si el script no arranca en 2.5 s, todo queda visible (probado).
 - **Orden de socias:** Marisol primero y Jazmín después (tarjetas y JSON-LD).
+- **Tarjeta de Jazmín** (audio de WhatsApp del 10-nov; transcripción en `_insumos/`, fuera del repo): «Mtra. Jazmín Balbuena Arriaga» (apellido confirmado por Víctor el 10-nov; antes decía «Arteaga»), socia fundadora con áreas familiar, gestión notarial y civil; formación: maestra en Derecho con énfasis en juicios orales (licenciada en Derecho), diplomado en el Código Nacional de Procedimientos Civiles y Familiares por el Centro de Estudios Jurídicos Carbonell y otro por la UAQ. Ya figura en el JSON-LD.
 - Pulido: «Saltar al contenido», `<main>`, sello transparente en la portada, favicon y apple-touch-icon.
 
 ## 4. Pendiente técnico
